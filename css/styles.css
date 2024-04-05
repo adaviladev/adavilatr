@@ -152,17 +152,21 @@ body {
     position: relative;
     width: 80vw; /* Ajusta el tamaño según tu diseño */
     margin: 0 auto; /* Centrar el contenedor */
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .cita {
     padding: 20px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
-    align-items: center;
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 180px;
     text-align: left;
+    width: 60%;
   }
 
   .cita p {
@@ -191,12 +195,12 @@ body {
   }
 
   .cita p {
-    animation-duration: 0.2s; /* Adjust the animation duration as needed */
+    animation-duration: 0.1s; /* Adjust the animation duration as needed */
   }
   
   @keyframes slide-in-right {
     from {
-      transform: translateX(15%);
+      transform: translateX(25%);
     }
     to {
       transform: translateX(0);
@@ -205,7 +209,7 @@ body {
   
   @keyframes slide-in-left {
     from {
-      transform: translateX(-15%);
+      transform: translateX(-25%);
     }
     to {
       transform: translateX(0);
