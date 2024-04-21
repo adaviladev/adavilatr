@@ -34,4 +34,15 @@ document.addEventListener('DOMContentLoaded', function () {
     mostrarCita();
 });
 
-  
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  var formData = new FormData(this);
+
+  var body = '';
+  formData.forEach(function(value, key) {
+      body += key + ': ' + value + '\n';
+  });
+
+  var mailtoLink = 'mailto:adavilatr@gmail.com?subject=Formulario%20de%20Contacto&body=' + encodeURIComponent(body);
+  window.location.href = mailtoLink;
+});

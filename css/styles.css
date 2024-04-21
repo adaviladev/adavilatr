@@ -33,6 +33,7 @@ header {
     box-shadow: -1px 9px 34px 1px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 9px 34px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 9px 34px 1px rgba(0,0,0,0.75);
+    z-index: 1000;
     
 }
 
@@ -52,30 +53,89 @@ li {
 a {
     color: white;
 }
+
+.linked-in {
+  color: rgb(17, 138, 212);
+  text-decoration: none;
+  font-weight: 600;
+  
+}
 /* Body Section */
 
-body {
-    background-image: url(/images/m_mac-733178.jpg);
-    z-index: -1;
+.hero-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  margin-top: 60px;
+  font-size: calc(16px + 2vw);
 }
 
-.hero-container {
+.hero-text {
+  margin-top: 10vh;
+  color: antiquewhite;
+}
+
+.nombre {
+  font-size: calc(2rem + 3.5vw);
+  color: #f69a3e;
+}
+
+.about-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: antiquewhite;
+  height:fit-content;
+}
+
+.about-text {
+  max-width: 90%;
+  margin-top: 15vh;
+  font-size: calc(1rem + 0.3vw);
+}
+
+
+.recomendaciones-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+  height: 100vh;
+}
+
+.contacto-contenedor {
+  background-color: rgb(255, 255, 255);
+}
+
+.mailto {
+  color: black;
+  text-decoration: none;
+}
+
+.contenedor-grande {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: transparent;
-    height: 100vh;
+    height: fit-content;
+    min-height: 90vh;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
-.hero-section {
+.contenido-seccion {
     margin-top: 85px;
-    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 8vh;
     display: flex;
     flex-direction: column;
-    color: black;
-    width: 100%; /* Make it occupy full width */
-    align-items: center; /* Center horizontally */
-    background-color: rgba(255, 255, 255, 0.822);
+    color: antiquewhite;
+    width: 90%;
+    align-items: center;
+    background-color: black;
     width: 90%;
     box-shadow: -1px 9px 34px 1px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 9px 34px 1px rgba(0,0,0,0.75);
@@ -83,29 +143,23 @@ body {
     height: 80vh;
 }
 
+.contenido-seccion-formulario {
+  margin-top: 85px;
+  margin-bottom: 20px;
+  padding-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+  width: 90%;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  height: 80vh;
+}
 
 
 .text-content {
     width: 90%;
-}
-
-.image-content {
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.image-content img {
-    width: 100%; /* Ensure the image fills the container */
-    max-width: 100%; /* Ensure the image does not exceed its container's width */
-    box-shadow: 1px 31px 52px -6px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 1px 31px 52px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 31px 52px -6px rgba(0,0,0,0.75);
-    border-radius: 8px;
-    border: solid 1px rgb(0, 0, 0)
-    
 }
 
 /* Optional: Styling for text content */
@@ -127,46 +181,22 @@ body {
     margin-bottom: 20px;
 }
 
-.cta-button {
-    display: block;
-    margin: 30px auto;
-    margin-bottom: 20px;
-    width: 40vw;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    border: 2px solid rgba(7, 7, 7, 0.868);
-    border-radius: 5px;
-    transition: border 0.8s ease, background-color 0.8s ease;
-
-}
-
-.cta-button:hover {
-    border-color: black;
-    background-color: lightgray;
-}
-
-.contenedor {
+.contenedor-cita {
     position: relative;
-    width: 80vw; /* Ajusta el tamaño según tu diseño */
-    margin: 0 auto; /* Centrar el contenedor */
+    margin-top: 5vh;
+    width: 70vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   
   .cita {
+    margin-top: 10px;
     padding: 20px;
     border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 180px;
-    text-align: left;
-    width: 60%;
+    background-color: #1d1d1c;
+    width: 70%;
   }
 
   .cita p {
@@ -176,10 +206,10 @@ body {
 }
   
   .navegacion {
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 10px;
+    z-index: 10;
+    display: flex;
+    padding: 20px;
   }
   
   button {
@@ -191,7 +221,7 @@ body {
   }
   
   button:hover {
-    background: #0056b3;
+    background: #617871;
   }
 
   .cita p {
@@ -223,4 +253,60 @@ body {
   .slide-in-right {
     animation-name: slide-in-right;
   }
+
+  .cta-button {
+    display: block;
+    margin: 30px auto;
+    margin-bottom: 20px;
+    width: 40vw;
+    max-width: 250px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid rgba(7, 7, 7, 0.868);
+    border-radius: 5px;
+    transition: border 0.8s ease, background-color 0.8s ease;
+
+}
+
+.cta-button:hover {
+    border-color: black;
+    background-color: rgb(185, 156, 156);
+}
   
+.formulario-contenedor {
+    width: 70vw;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    font-size: calc(1rem + 0.5vw)
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 5px;
+}
+input, textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #000000;
+    font-size: 16px;
+}
+input[type="submit"] {
+    background-color: #434f50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
+input[type="submit"]:hover {
+    background-color: #3e56f7;
+}
