@@ -170,7 +170,7 @@ body {
   }
 
   .cita p {
-    font-size: calc(6px + 2vw); /* Adjust the font size as desired */
+    font-size: calc(6px + 1.5vw); /* Adjust the font size as desired */
     line-height: 1.6;
     margin-bottom: 20px;
 }
