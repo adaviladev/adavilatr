@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Álvaro Dávila || En-Es Translator</title>
+    <title>Álvaro Dávila || Traductor inglés | japonés | portugués | español</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">  
+
+
+
+
 </head>
 
 <body>
@@ -22,74 +27,46 @@
             </ul>
         </nav>
     </header>
-    <div id="hero" class="hero-contenedor">
-        <div class="contenedor-grande">
-            <div class="hero-text">
-                <p class="nombre">Álvaro Dávila</p>
-                <p>Traductor inglés | japonés | portugués | español</p>
-                <p>10+ años en la industria</p><br>
-                <p><a href="#about">Sobre mí</p></a>
-            </div>
-        </div>
+    <div id="hero" class="hero-container section">
+        <p class="mi-nombre">Álvaro Dávila</p>
+        <h1 class="playfair-display-hero">Traductor <span id="english">inglés</span> | <span id="japanese">japonés</span> | <span
+                id="portuguese">portugués</span> | <span id="spanish">español</span></h1>
+        <h3>10+ años en la industria</h3><br><br>
+        <p><a href="#about">Sobre mí</a></p>
     </div>
-    <div id="about" class="about-contenedor">
-        <div class="contenedor-grande">
-            <div class="about-text">
-                <p>Soy Licenciado en Lingüística aplicada a la traducción con mención en Inglés y Japonés de la
-                    Universidad de Santiago de Chile.</p><br>
-                <p>Durante mis estudios universitarios, adquirí una sólida formación en traducción que me proporcionó
-                    las habilidades y conocimientos necesarios para destacarme en mi carrera profesional. A lo largo de
-                    los años, aprendí a dominar el estudio de las lenguas en todas sus facetas, desde la gramática hasta
-                    la comprensión oral y escrita, lo que me ha permitido traducir una amplia variedad de textos con
-                    precisión y fluidez. Además, me especialicé en la traducción de textos jurídicos y técnicos, así
-                    como en áreas relacionadas con tecnología y la ciencia.</p><br>
-                <p>Actualmente tengo más de 10 años de experiencia en el rubro y ofrezco soluciones lingüísticas que
-                    ayudan a mis clientes hacer negocios con el resto del mundo. </p><br>
-                <p>Si quieres saber más sobre mi trayectoria profesional, te invito a visitar mi perfil en LinkedIn siguiendo este enlace:</p><br>
-                <a class="linked-in" href="https://www.linkedin.com/in/alvarodavilapinto/" target="_blank">LinkedIn</a>
-
-            </div>
-        </div>
+    <div id="about" class="about-container section">
+        <h2>Acerca de mí</h2>
+        <p>Soy Licenciado en Lingüística aplicada a la traducción con mención en Inglés y Japonés de la
+            Universidad de Santiago de Chile.</p><br>
+        <p>Durante mis estudios universitarios, adquirí una sólida formación en traducción que me proporcionó
+            las habilidades y conocimientos necesarios para destacarme en mi carrera profesional. A lo largo de
+            los años, aprendí a dominar el estudio de las lenguas en todas sus facetas, desde la gramática hasta
+            la comprensión oral y escrita, lo que me ha permitido traducir una amplia variedad de textos con
+            precisión y fluidez. Además, me especialicé en la traducción de textos jurídicos y técnicos, así
+            como en áreas relacionadas con tecnología y la ciencia.</p><br>
+        <p>Actualmente tengo más de 10 años de experiencia en el rubro y ofrezco soluciones lingüísticas que
+            ayudan a mis clientes hacer negocios con el resto del mundo. </p><br>
+        <p>Si quieres saber más sobre mi trayectoria profesional, te invito a visitar mi perfil en LinkedIn siguiendo
+            este enlace:</p><br>
+        <a class="linked-in" href="https://www.linkedin.com/in/alvarodavilapinto/" target="_blank">LinkedIn</a>
     </div>
-    <div id="recomendaciones" class="recomendaciones-contenedor">
-        <div class="contenedor-grande">
-            <div class="contenido-seccion">
-                <h1 class="bebas-neue-regular">Recomendado por sus clientes</h1>
-                <h2 class="bebas-neue-regular">Comunicación sin fronteras en manos de un experto</h2>
-                <div class="contenedor-cita">
-                    <div class="cita">
-                        <p>"Aquí va tu cita"</p>
-                    </div>
-                    <div class="navegacion">
-                        <button id="anterior">&lt;</button>
-                        <button id="siguiente">&gt;</button>
-                    </div>
-                </div>
-                <a href="#contacto" class="cta-button">Solicite una Cotización</a>
-            </div>
+    <div id="recomendaciones" class="recomendaciones-container section">
+        <h2>Recomendado por sus clientes</h2>
+        <p>Un experto en el que puede confiar</p>
+        <div class="cita">
+            <p>"Aquí va tu cita"</p>
         </div>
-    </div>
-    <div id="contacto" class="contacto-contenedor">
-        <div class="contenedor-grande">
-            <div class="contenido-seccion-formulario">
-                <h1 class="bebas-neue-regular">Contacto</h1>
-                <div class="formulario-contenedor">
-                    <p>Puede solicitar más información llamándome o enviándome un mensaje por WhatsApp al teléfono <strong>+56981838598</strong>, o bien por correo electrónico escribiéndome a <a class="mailto" href="mailto:adavilatr@gmail.com"><strong>adavilatr@gmail.com</strong></a>.</p>
-                   
-                    <!-- <form id="contactForm" action="mailto:adavilatr@gmail.com" method="POST"
-                        enctype="application/x-www-form-urlencoded">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                        <label for="email">Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                        <input type="submit" value="Enviar">
-                    </form> -->
-                </div>
-            </div>
+        <div class="navegacion">
+            <button id="anterior">&lt;</button>
+            <button id="siguiente">&gt;</button>
         </div>
+        <a href="#contacto" class="cta-button">Solicite una Cotización</a>        
     </div>
+    <div id="contacto" class="contacto-container section">
+        <h2>Contacto</h2>
+        <p>Puede solicitar más información llamándome o enviándome un mensaje por WhatsApp al teléfono
+            <strong>+56981838598</strong>, o bien por correo electrónico escribiéndome a <a class="mailto"
+                href="mailto:adavilatr@gmail.com"><strong>adavilatr@gmail.com</strong></a>.</p>
     </div>
     <script src="js/script.js"></script>
 </body>
