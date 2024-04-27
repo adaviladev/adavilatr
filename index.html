@@ -32,7 +32,14 @@
         <h1 class="playfair-display-hero">Traductor <span id="english">inglés</span> | <span id="japanese">japonés</span> | <span
                 id="portuguese">portugués</span> | <span id="spanish">español</span></h1>
         <h3>10+ años en la industria</h3><br><br>
-        <p><a href="#about">Sobre mí</a></p>
+        <a href="#about" class="about-me">
+            <button>
+                Sobre mí
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                    <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/>
+                </svg>
+            </button>
+        </a>
     </div>
     <div id="about" class="about-container section">
         <h2>Acerca de mí</h2>
@@ -54,13 +61,18 @@
         <h2>Recomendado por sus clientes</h2>
         <p>Un experto en el que puede confiar</p>
         <div class="cita">
-            <p>"Aquí va tu cita"</p>
+            <p class="contenedor-cita">"Aquí va tu cita"</p>
         </div>
-        <div class="navegacion">
-            <button id="anterior">&lt;</button>
-            <button id="siguiente">&gt;</button>
+        <div class="botones-recomendacion">
+            <button id="anterior"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></button>
+            <button id="siguiente"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></button>
         </div>
-        <a href="#contacto" class="cta-button">Solicite una Cotización</a>        
+        <hr><hr>
+        <a href="#contacto">
+            <button>
+            Solicite una Cotización
+            </button>
+        </a>   
     </div>
     <div id="contacto" class="contacto-container section">
         <h2>Contacto</h2>
