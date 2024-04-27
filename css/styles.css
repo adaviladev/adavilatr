@@ -19,9 +19,8 @@ html {
 .section {
   padding-left: 5vw;
   padding-right: 5vw;
-  padding-top: calc(5vh + 60px); /* Altura de la barra de navegación más 5vh */
+  padding-top: calc(10vh + 80px); /* Altura de la barra de navegación más 5vh */
   padding-bottom: 5vh;
-  margin-bottom: 16px; /* Agregar un espacio entre las secciones */
 }
 
 /* Estilos de encabezado */
@@ -31,16 +30,33 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  box-shadow: -1px 9px 34px 1px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -1px 9px 34px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 9px 34px 1px rgba(0, 0, 0, 0.75);
   z-index: 1000;
 }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.logo-container {
+  width: 100px; /* Ancho deseado */
+  height: auto; /* Altura ajustada automáticamente */
+  margin-right: auto; /* Margen derecho automático para alinear a la izquierda */
+}
+
+.logo-container img {
+  display: block; /* Asegurar que la imagen sea un elemento de bloque */
+  width: 100%; /* Ocupar todo el ancho disponible del contenedor */
+  height: 80px; /* Altura ajustada automáticamente */
+}
+
 
 ul {
   list-style-type: none;
@@ -50,34 +66,66 @@ ul {
 
 li {
   display: inline;
-  font-weight: 700;
+  font-weight: 900;
   margin-left: 3vw;
   margin-right: 3vw;
+  font-size: 18px;
+
 }
 
 a {
-  color: white;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: rgb(200, 41, 41);
+  transition: 0.3s;
 }
 
 /* Estilos del cuerpo */
 .hero-container {
   display: flex;
   flex-direction: column;
-  background-color: #0b0d1e;
-  color: white;
+  /*background: rgb(16,21,57);*/
+  background: rgb(255, 252, 249);
+  /*background: radial-gradient(circle, rgba(16,21,57,1) 3%, rgba(11,13,30,1) 100%);*/
+  color: rgb(31, 30, 30);
   height: 100vh;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .about-container {
   display: flex;
   flex-direction: column;
-  background-color: #C28D57;
-  height: 100vh;
-  color: #332D26;
+  height: auto;
+  color: #be8039;
+  background: rgb(255, 252, 249);
+  color: rgb(70, 60, 60);
+ align-items: center;
 }
 
-.recomendaciones-container,
+.about-container h2 {
+  text-align: center;
+}
+
+.about-container p {
+  max-width: 60%;
+}
+
+.about-container img {
+  max-width: 60%;
+  margin-top: 20px;
+  border: solid 1px;
+  border-radius: 8px;
+}
+
+.recomendaciones-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
 .contacto-container {
   display: flex;
   flex-direction: column;
@@ -87,14 +135,17 @@ a {
 
 /* Estilos de texto */
 .mi-nombre {
-  color: #f69a3e;
+  /*color: #f69a3e;*/
+  color: #362e2e;
   font-size: 3.157rem;
+  margin-bottom: 16px;
 }
 
 h1 {
-  font-size: 5.61rem;
+  font-size: 4.61rem;
   line-height: 1;
   margin-bottom: 24px;
+  color: black;
 }
 
 h2 {
@@ -105,15 +156,16 @@ h2 {
 
 h3 {
   font-size: 1.777rem;
+  margin-bottom: 24px;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 #about a,
 .mailto {
-  color: #f0f0f0;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -126,7 +178,7 @@ p {
 /* Estilos de botones */
 button {
   background: #2f2f2f;
-  color: #f69a3e;
+  color: #ffffff;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -134,6 +186,7 @@ button {
   display: inline-flex;
   align-items: center;
   border-radius: 8px;
+  
 }
 
 button:hover {
@@ -176,14 +229,15 @@ button:hover {
 #portuguese,
 #spanish {
   transition: color 0.3s ease-in; /* Transición suave de color */
-  color: white; /* Color original del texto */
+  /*color: rgb(159, 82, 82); /* Color original del texto */
+  color: rgb(200, 41, 41); /* Color original del texto */
 }
 
 #english.hover,
 #japanese.hover,
 #portuguese.hover,
 #spanish.hover {
-  color: #f69a3e; /* Color al pasar el mouse */
+  color: #010101; /* Color al pasar el mouse */
 }
 
 .botones-recomendacion {
@@ -192,11 +246,13 @@ button:hover {
 }
 
 .contenedor-cita {
-  padding: 10px;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 32px 94px -8px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 32px 94px -8px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 32px 94px -8px rgba(0, 0, 0, 0.75);
+  background-color: rgb(196, 192, 192);
+  color: rgb(0, 0, 0);
 }
 
 .cita {
@@ -212,4 +268,26 @@ button:hover {
 
 .about-me svg {
   margin-left: 5px;
+}
+
+footer {
+  display: flex; /* Usa flexbox para alinear los elementos en la misma línea */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-around;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 18px;
+}
+
+.contact-info {
+  margin-right: 20px; /* Añade un espacio entre cada línea de información de contacto */
+}
+
+footer img {
+  width: 30px; /* Ajusta el tamaño del icono según sea necesario */
 }

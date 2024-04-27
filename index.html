@@ -9,7 +9,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 
 
 
@@ -19,6 +20,9 @@
 <body>
     <header>
         <nav>
+            <div class="logo-container">
+                <img src="/images/logo fondo negro.png" alt="">
+            </div>
             <ul>
                 <li><a href="#hero">Inicio</a></li>
                 <li><a href="#about">Acerca de</a></li>
@@ -29,14 +33,16 @@
     </header>
     <div id="hero" class="hero-container section">
         <p class="mi-nombre">Álvaro Dávila</p>
-        <h1 class="playfair-display-hero">Traductor <span id="english">inglés</span> | <span id="japanese">japonés</span> | <span
-                id="portuguese">portugués</span> | <span id="spanish">español</span></h1>
+        <h1 class="playfair-display-hero">Traductor <span id="english">inglés</span> | <span
+                id="japanese">japonés</span> | <span id="portuguese">portugués</span> | <span
+                id="spanish">español</span></h1>
         <h3>10+ años en la industria</h3><br><br>
         <a href="#about" class="about-me">
             <button>
                 Sobre mí
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                    <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#5f6368">
+                    <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z" />
                 </svg>
             </button>
         </a>
@@ -55,7 +61,9 @@
             ayudan a mis clientes hacer negocios con el resto del mundo. </p><br>
         <p>Si quieres saber más sobre mi trayectoria profesional, te invito a visitar mi perfil en LinkedIn siguiendo
             este enlace:</p><br>
-        <a class="linked-in" href="https://www.linkedin.com/in/alvarodavilapinto/" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/alvarodavilapinto/" target="_blank"><button>LinkedIn<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button></a>
+        <br>
+        <img src="/images/20211017_161048.jpg" alt="">
     </div>
     <div id="recomendaciones" class="recomendaciones-container section">
         <h2>Recomendado por sus clientes</h2>
@@ -64,22 +72,36 @@
             <p class="contenedor-cita">"Aquí va tu cita"</p>
         </div>
         <div class="botones-recomendacion">
-            <button id="anterior"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></button>
-            <button id="siguiente"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></button>
+            <button id="anterior"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                    width="24px" fill="#5f6368">
+                    <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+                </svg></button>
+            <button id="siguiente"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                    width="24px" fill="#5f6368">
+                    <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                </svg></button>
         </div>
-        <hr><hr>
+        <hr>
+        <hr>
         <a href="#contacto">
             <button>
-            Solicite una Cotización
+                Solicite una Cotización
             </button>
-        </a>   
+        </a>
     </div>
     <div id="contacto" class="contacto-container section">
         <h2>Contacto</h2>
         <p>Puede solicitar más información llamándome o enviándome un mensaje por WhatsApp al teléfono
             <strong>+56981838598</strong>, o bien por correo electrónico escribiéndome a <a class="mailto"
-                href="mailto:adavilatr@gmail.com"><strong>adavilatr@gmail.com</strong></a>.</p>
+                href="mailto:adavilatr@gmail.com"><strong>adavilatr@gmail.com</strong></a>.
+        </p>
     </div>
+    <footer>
+        <p class="contact-info">+569 81838598</p><hr>
+        <p><a href="mailto:adavilatr@gmail.com">adavilatr@gmail.com</a></p><hr>
+        <p><a href="https://www.linkedin.com/in/alvarodavilapinto/">LinkedIn</a></p>
+    </footer>
+    
     <script src="js/script.js"></script>
 </body>
 

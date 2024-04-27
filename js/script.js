@@ -41,12 +41,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Citation Rotation
-  const citas = [
-    "Álvaro es un profesional excepcionalmente dedicado y receptivo que siempre está dispuesto a ir más allá para satisfacer las necesidades de sus clientes. —Héctor Cartagena, Traductor",
-    "Altamente recomendado debido a la calidad de sus traducciones, así como al nivel de orientación al detalle en cada producto final. —Jennifer Moore, Psicóloga",
-    "Ha sido un agrado tratar con Álvaro, persona que ha respondido muy responsablemente a los trabajos acordados a través de la red. —Ignacio Carrasco U. ",
-    "Durante el tiempo que trabajamos juntos, Álvaro demostró ser un trabajador centrado en objetivos y proactivo. —Ximena Peña M., Traductora",
-  ];
+const citas = [
+  `Álvaro es un profesional excepcionalmente dedicado y receptivo que siempre está dispuesto a ir más allá para satisfacer las necesidades de sus clientes.
+  —Héctor Cartagena, Traductor`,
+  `Altamente recomendado debido a la calidad de sus traducciones, así como al nivel de orientación al detalle en cada producto final.
+  —Jennifer Moore, Psicóloga`,
+  `Ha sido un agrado tratar con Álvaro, persona que ha respondido muy responsablemente a los trabajos acordados a través de la red.
+  —Ignacio Carrasco U.`,
+  `Durante el tiempo que trabajamos juntos, Álvaro demostró ser un trabajador centrado en objetivos y proactivo.
+  —Ximena Peña M., Traductora`,
+];
   let index = 0;
   const citaElement = document.querySelector(".cita p");
 
@@ -76,21 +80,5 @@ document.addEventListener("DOMContentLoaded", function () {
   mostrarCita();
 });
 
-document
-  .getElementById("contactForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-    var formData = new FormData(this);
-
-    var body = "";
-    formData.forEach(function (value, key) {
-      body += key + ": " + value + "\n";
-    });
-
-    var mailtoLink =
-      "mailto:adavilatr@gmail.com?subject=Formulario%20de%20Contacto&body=" +
-      encodeURIComponent(body);
-    window.location.href = mailtoLink;
-  });
 
 
