@@ -126,6 +126,27 @@ a:hover {
   height: 100vh;
 }
 
+.servicios-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+  max-width: 90%;
+  background-color: #f1f9ff;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255);
+  border: 1px solid rgba(1, 1, 1, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.servicios-title {
+  text-align: center;
+}
+
 .contacto-container {
   display: flex;
   flex-direction: column;
