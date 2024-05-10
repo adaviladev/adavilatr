@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -21,6 +21,7 @@
 <body>
     <header>
         <nav class="navbar fixed-top navbar-expand-sm bg-body-tertiary" data-bs-theme="dark">
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,14 +35,16 @@
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
+            <button id="dark-mode-button" class="btn btn-dark">Modo Oscuro</button>
         </nav>
     </header>
     <div id="hero" class="container hero">
+
         <h3 class="mi-nombre">Álvaro Dávila</h3>
         <h1 class="playfair-display-hero display-2">Traductor <span id="english">inglés</span> | <span
                 id="japanese">japonés</span> | <span id="portuguese">portugués</span> | <span
                 id="spanish">español</span></h1>
-        <h3>10+ años en la industria</h3><br><br>
+        <h3>Más de 12 años de experiencia en la industria ofreciendo servicios de calidad y precisión</h3><br><br>
         <a href="#about" class="about-me">
             <button type="button" class="btn btn-info">
                 Sobre mí
@@ -75,34 +78,37 @@
 
 
     </div>
-    <div class="container">
-        <img class="img-fluid" src="/images/20211017_161048.jpg" alt="Yo">
+    <div class="container img">
+        <img id="yo" class="img-fluid" src="/images/20211017_161048.jpg" alt="Yo">
     </div>
-
     <div id="servicios" class="container services">
         <h2>Servicios</h2>
-        <div class="container">
-            <div class="grid-item">
-                <h3>Traducción y corrección de textos</h3>
-                <p>Traducción de...</p>
+        <div class="card-group">
+            <div class="card">
+                <img src="/images/Cards/istockphoto-504427598-612x612.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Traducción y localización</h5>
+                    <p class="card-text">Expresa tus ideas en otros idiomas y expande tu negocio.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
             </div>
-            <div class="grid-item">
-                <h3>Consuloría de servicios lingüísticos</h3>
-                <p>Enfocado a empresas que necesitan... </p>
+            <div class="card">
+                <img src="/images/Cards/istockphoto-170044810-612x612.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Edición y proofreading</h5>
+                    <p class="card-text">Un texto limpio y libre de errores transmite seguridad y confianza.
+                    </p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
             </div>
-            <div class="grid-item">
-                <h3>Transcipción</h3>
-                <p>Enfocado a empresas que necesitan... </p>
+            <div class="card">
+                <img src="/images/Cards/istockphoto-1952248716-612x612.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Subtitulaje</h5>
+                    <p class="card-text">No todos los textos se leen en un documento. Muchos usuarios se pueden beneficiar de contenidos subtitulados para abarcar una mayor audiencia.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
             </div>
-            <div class="grid-item">
-                <h3>Localización</h3>
-                <p>Enfocado a empresas que necesitan... </p>
-            </div>
-            <div class="grid-item">5</div>
-            <div class="grid-item">6</div>
-            <div class="grid-item">7</div>
-            <div class="grid-item">8</div>
-            <div class="grid-item">9</div>
         </div>
     </div>
     <div id="recomendaciones" class="container recommendations">
