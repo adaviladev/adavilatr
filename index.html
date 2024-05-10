@@ -31,7 +31,7 @@
 
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-sm bg-body-tertiary" data-bs-theme="dark">
+        <nav class="navbar fixed-top navbar-expand-sm bg-dark" data-bs-theme="dark">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,9 +46,11 @@
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
-            <button id="dark-mode-button" class="btn btn-dark">Modo Oscuro</button>
+<!-- <button id="dark-mode-button" class="btn btn-dark">Modo Oscuro</button> -->
         </nav>
     </header>
+    <video class="background-video" src="video/1851768-uhd_3840_2160_30fps.mp4" autoplay="" id="heroVideo" loop=""
+        muted=""></video>
     <div id="hero" class="container hero">
 
         <h3 class="mi-nombre">Álvaro Dávila</h3>
@@ -57,7 +59,7 @@
                 id="spanish">español</span></h1>
         <h3>Más de 12 años de experiencia en la industria ofreciendo servicios de calidad y precisión</h3><br><br>
         <a href="#about" class="about-me">
-            <button type="button" class="btn btn-info">
+            <button type="button" class="btn btn-secondary">
                 Sobre mí
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#5f6368">
@@ -81,7 +83,7 @@
         <p>Si quieres saber más sobre mi trayectoria profesional, te invito a visitar mi perfil en LinkedIn siguiendo
             este enlace:</p><br>
         <a href="https://www.linkedin.com/in/alvarodavilapinto/" target="_blank"><button type="button"
-                class="btn btn-info">LinkedIn<svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                class="btn btn-light">LinkedIn<svg xmlns="http://www.w3.org/2000/svg" height="24px"
                     viewBox="0 -960 960 960" width="24px" fill="#5f6368">
                     <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
                 </svg></button></a>
@@ -89,37 +91,48 @@
 
 
     </div>
-    <div class="container img">
+
+    <!--     <div class="container img">
         <img id="yo" class="img-fluid" src="images/20211017_161048.jpg" alt="Yo">
-    </div>
+    </div> -->
+
     <div id="servicios" class="container services">
         <h2>Servicios</h2>
         <div class="card-group">
-            <div class="card">
+            <div class="card text-center">
                 <img src="images/Cards/istockphoto-504427598-612x612.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Traducción y localización</h5>
                     <p class="card-text">Expresa tus ideas en otros idiomas y expande tu negocio.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <p class="card-text"><small class="text-body-secondary"></small></p>
                 </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Cotizar</small>
+                  </div>
             </div>
-            <div class="card">
+            <div class="card text-center">
                 <img src="images/Cards/istockphoto-170044810-612x612.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Edición y proofreading</h5>
                     <p class="card-text">Un texto limpio y libre de errores transmite seguridad y confianza.
                     </p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <p class="card-text"><small class="text-body-secondary"></small></p>
                 </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Cotizar</small>
+                  </div>
             </div>
-            <div class="card">
+            <div class="card text-center">
                 <img src="images/Cards/istockphoto-1952248716-612x612.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Subtitulaje</h5>
                     <p class="card-text">No todos los textos se leen en un documento. Muchos usuarios se pueden
                         beneficiar de contenidos subtitulados para abarcar una mayor audiencia.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <p class="card-text"><small class="text-body-secondary"></small></p>
                 </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Cotizar</small>
+                  </div>
             </div>
         </div>
     </div>
@@ -129,18 +142,17 @@
         <div class="cita">
             <p class="contenedor-cita">"Aquí va tu cita"</p>
         </div>
-        <div class="botones-recomendacion">
-            <button class="btn btn-info" id="anterior"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+        <div class="botones-recomendacion btn-group">
+            <button class="btn btn-light" id="anterior"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
                     viewBox="0 -960 960 960" width="24px" fill="#5f6368">
                     <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
                 </svg></button>
-            <button class="btn btn-info" id="siguiente"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+            <button class="btn btn-light" id="siguiente"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
                     viewBox="0 -960 960 960" width="24px" fill="#5f6368">
                     <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
                 </svg></button>
         </div>
-        <hr>
-        <hr>
+
         <a href="#contacto">
             <button type="button" class="btn btn-info">
                 Solicite una Cotización
