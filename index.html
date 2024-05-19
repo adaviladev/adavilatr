@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="light">
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -31,14 +31,14 @@
 
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-sm bg-dark" data-bs-theme="dark">
+        <nav class="navbar fixed-top navbar-expand-sm bg-light" data-bs-theme="light">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#hero">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">Acerca de</a></li>
                     <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
@@ -46,15 +46,14 @@
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
-<!-- <button id="dark-mode-button" class="btn btn-dark">Modo Oscuro</button> -->
+            <!-- <button id="dark-mode-button" class="btn btn-dark">Modo Oscuro</button> -->
         </nav>
     </header>
     <video class="background-video" src="video/1851768-uhd_3840_2160_30fps.mp4" autoplay="" id="heroVideo" loop=""
         muted=""></video>
     <div id="hero" class="container hero">
-
         <h3 class="mi-nombre">Álvaro Dávila</h3>
-        <h1 class="playfair-display-hero display-2">Traductor <span id="english">inglés</span> | <span
+        <h1 class="playfair-display-hero display-5">Servicios de traducción<br><span id="english">inglés</span> | <span
                 id="japanese">japonés</span> | <span id="portuguese">portugués</span> | <span
                 id="spanish">español</span></h1>
         <h3>Más de 12 años de experiencia en la industria ofreciendo servicios de calidad y precisión</h3><br><br>
@@ -69,19 +68,21 @@
         </a>
     </div>
     <div id="about" class="container about">
-        <h2>Acerca de mí</h2>
-        <p>Soy Licenciado en Lingüística aplicada a la traducción con mención en Inglés y Japonés de la
-            Universidad de Santiago de Chile.</p><br>
-        <p>Durante mis estudios universitarios, adquirí una sólida formación en traducción que me proporcionó
-            las habilidades y conocimientos necesarios para destacarme en mi carrera profesional. A lo largo de
+        <h2 id="acerca-de">Acerca de mí</h2>
+        <p>
+            Soy <strong>Licenciado en Lingüística aplicada a la traducción</strong> con mención en Inglés y Japonés de la
+                Universidad de Santiago de Chile.
+        </p><br>
+        <p>Durante mis estudios universitarios, adquirí una sólida formación en <strong>traducción</strong> que me proporcionó
+            las habilidades y conocimientos necesarios para destacarme en mi <strong>carrera profesional</strong>. A lo largo de
             los años, aprendí a dominar el estudio de las lenguas en todas sus facetas, desde la gramática hasta
-            la comprensión oral y escrita, lo que me ha permitido traducir una amplia variedad de textos con
-            precisión y fluidez. Además, me especialicé en la traducción de textos jurídicos y técnicos, así
+            la comprensión oral y escrita, lo que me ha permitido traducir una <strong>amplia variedad de textos</strong> con
+            precisión y fluidez. Además, <strong>me especialicé en la traducción de textos jurídicos y técnicos</strong>, así
             como en áreas relacionadas con tecnología y la ciencia.</p><br>
-        <p>Actualmente tengo más de 10 años de experiencia en el rubro y ofrezco soluciones lingüísticas que
-            ayudan a mis clientes hacer negocios con el resto del mundo. </p><br>
-        <p>Si quieres saber más sobre mi trayectoria profesional, te invito a visitar mi perfil en LinkedIn siguiendo
-            este enlace:</p><br>
+        <p>Actualmente tengo <strong>más de 10 años de experiencia</strong> en el rubro y ofrezco soluciones lingüísticas que
+            ayudan a mis clientes hacer negocios con el resto del mundo. </p>
+        <p>Si quieres saber más sobre mi trayectoria profesional, te invito a visitar mi <strong>perfil en LinkedIn</strong> siguiendo
+            este enlace:</p>
         <a href="https://www.linkedin.com/in/alvarodavilapinto/" target="_blank"><button type="button"
                 class="btn btn-light">LinkedIn<svg xmlns="http://www.w3.org/2000/svg" height="24px"
                     viewBox="0 -960 960 960" width="24px" fill="#5f6368">
@@ -97,44 +98,78 @@
     </div> -->
 
     <div id="servicios" class="container services">
-        <h2>Servicios</h2>
-        <div class="card-group">
-            <div class="card text-center">
-                <img src="images/Cards/istockphoto-504427598-612x612.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Traducción y localización</h5>
-                    <p class="card-text">Expresa tus ideas en otros idiomas y expande tu negocio.</p>
-                    <p class="card-text"><small class="text-body-secondary"></small></p>
+        <div class="container " id="servicios-a">
+            <h2>Servicios</h2>
+            <p>Servicios lingüísticos diseñados para satisfacer tus necesidades de comunicación global. Ya sea para
+                <strong>traducir o localizar</strong> contenido o para <strong>editar y corregir</strong> textos, mi objetivo es proporcionar
+                resultados precisos y de alta calidad. Con un enfoque en la precisión, la coherencia y la
+                sensibilidad cultural, aseguro que tu mensaje sea <strong>claro, efectivo y profesional</strong> en cualquier idioma
+                y formato.</p>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Localización y Transcreación
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><strong>Tu contenido adaptado a tu audiencia.</strong> Como
+                        traductor profesional, ofrezco
+                        servicios de transcreación y localización que llevan tu contenido más allá de las barreras
+                        del idioma. No solo traduzco palabras, sino que adapto mensajes para que sean culturalmente
+                        apropiados y contextualmente precisos en cada mercado objetivo. Con experiencia en inglés,
+                        portugués, japonés y español, me aseguro de que cada detalle de tu mensaje sea auténtico y
+                        efectivo, permitiendo que tu marca se comunique de manera convincente y atractiva en
+                        cualquier idioma. Potencia tu alcance internacional con traducciones que conectan de verdad
+                        con tu audiencia global.</div>
                 </div>
-                <div class="card-footer">
-                    <small class="text-body-secondary">Cotizar</small>
-                  </div>
             </div>
-            <div class="card text-center">
-                <img src="images/Cards/istockphoto-170044810-612x612.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Edición y proofreading</h5>
-                    <p class="card-text">Un texto limpio y libre de errores transmite seguridad y confianza.
-                    </p>
-                    <p class="card-text"><small class="text-body-secondary"></small></p>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Traducción Jurídica
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <strong>Traducción de contratos, documentos corporativos, informe financieros, reglamentos y
+                            normativas.</strong> Servicio especializado en traducción jurídica, enfocado en la precisión
+                        y confiabilidad de toda tu documentación legal. Cada término y detalle jurídico se traduce con
+                        exactitud y claridad, respetando las particularidades legales de cada idioma y jurisdicción. La
+                        precisión es esencial en el ámbito legal, por lo que se ofrecen traducciones meticulosas que
+                        mantienen la integridad y el significado de los documentos originales. Experiencia en asegurar
+                        que los textos legales sean completamente comprensibles y profesionalmente presentados en
+                        cualquier idioma.
+                    </div>
                 </div>
-                <div class="card-footer">
-                    <small class="text-body-secondary">Cotizar</small>
-                  </div>
             </div>
-            <div class="card text-center">
-                <img src="images/Cards/istockphoto-1952248716-612x612.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Subtitulaje</h5>
-                    <p class="card-text">No todos los textos se leen en un documento. Muchos usuarios se pueden
-                        beneficiar de contenidos subtitulados para abarcar una mayor audiencia.</p>
-                    <p class="card-text"><small class="text-body-secondary"></small></p>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Edición/Proofreading
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <strong>Correcciones de formato, estilo y redacción.</strong>
+                        Servicio especializado en la revisión meticulosa de textos para garantizar claridad, coherencia
+                        y precisión. Cada documento se analiza a fondo para corregir errores gramaticales, ortográficos
+                        y de puntuación, así como para mejorar la estructura y el flujo del texto. La atención al
+                        detalle y el profundo conocimiento de los distintos estilos y normas aseguran que tus escritos
+                        sean
+                        presentados de manera profesional y efectiva, manteniendo la integridad y el propósito
+                        original del contenido.
+                    </div>
                 </div>
-                <div class="card-footer">
-                    <small class="text-body-secondary">Cotizar</small>
-                  </div>
             </div>
         </div>
+    </div>
+
     </div>
     <div id="recomendaciones" class="container recommendations">
         <h2>Recomendado por sus clientes</h2>
@@ -152,12 +187,12 @@
                     <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
                 </svg></button>
         </div>
-
-        <a href="#contacto">
-            <button type="button" class="btn btn-info">
+        <div class="cotizacion-button-container">        <a href="#contacto">
+            <button type="button" class="btn btn-secondary">
                 Solicite una Cotización
             </button>
-        </a>
+        </a></div>
+
     </div>
     <div id="contacto" class="container contact">
         <h2>Contacto</h2>

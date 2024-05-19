@@ -1,305 +1,3 @@
-/* 
-
-.playfair-display-hero {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.section {
-  padding-left: 5vw;
-  padding-right: 5vw;
-  padding-top: calc(10vh + 80px);
-  padding-bottom: 5vh;
-}
-
-header {
-  background-color: rgba(0, 0, 0, 1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  z-index: 1000;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 90%;
-}
-
-.logo-container {
-  width: 100px;
-  height: auto;
-  margin-right: auto;
-}
-
-.logo-container img {
-  display: block;
-  width: 100%;
-  height: 80px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline;
-  font-weight: 900;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  font-size: 18px;
-}
-
-a {
-  color: rgb(255, 255, 255);
-}
-
-a:hover {
-  color: rgb(200, 41, 41);
-  transition: 0.3s;
-}
-
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  background: rgb(255, 252, 249);
-  color: rgb(31, 30, 30);
-  height: 100vh;
-  margin-top: 80px;
-}
-
-.about-container {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  color: #be8039;
-  background: rgb(255, 252, 249);
-  color: rgb(70, 60, 60);
-  align-items: center;
-}
-
-.about-container h2 {
-  text-align: center;
-}
-
-.about-container p {
-  max-width: 60%;
-}
-
-.about-container img {
-  max-width: 60%;
-  margin-top: 20px;
-  border: solid 1px;
-  border-radius: 8px;
-}
-
-.recomendaciones-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-}
-
-.servicios-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  margin: auto;
-  max-width: 90%;
-  background-color: #f1f9ff;
-  padding: 10px;
-}
-
-.grid-item {
-  background-color: rgba(255, 255, 255);
-  border: 1px solid rgba(1, 1, 1, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.servicios-title {
-  text-align: center;
-}
-
-.contacto-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-}
-
-.mi-nombre {
-  color: #362e2e;
-  font-size: 3.157rem;
-  margin-bottom: 16px;
-}
-
-h1 {
-  font-size: 4.61rem;
-  line-height: 1;
-  margin-bottom: 24px;
-  color: black;
-}
-
-h2 {
-  font-size: 2.369rem;
-  line-height: 1;
-  margin-bottom: 24px;
-}
-
-h3 {
-  font-size: 1.777rem;
-  margin-bottom: 24px;
-}
-
-p {
-  font-size: 1.5rem;
-}
-
-#about a,
-.mailto {
-  color: #000000;
-  text-decoration: none;
-}
-
-.contacto-container p {
-  margin-top: 5vh;
-  text-align: center;
-  max-width: 600px;
-}
-
-button {
-  background: #2f2f2f;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  max-width: 200px;
-  display: inline-flex;
-  align-items: center;
-  border-radius: 8px;
-}
-
-button:hover {
-  background: rgb(68, 66, 66);
-  color: rgb(255, 255, 255);
-}
-
-@keyframes slide-in-right {
-  from {
-    transform: translateX(25%);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slide-in-left {
-  from {
-    transform: translateX(-25%);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-}
-
-.slide-in-left {
-  animation-name: slide-in-left;
-}
-
-.slide-in-right {
-  animation-name: slide-in-right;
-}
-
-#english,
-#japanese,
-#portuguese,
-#spanish {
-  transition: color 0.3s ease-in;
-  color: rgb(200, 41, 41);
-}
-
-#english.hover,
-#japanese.hover,
-#portuguese.hover,
-#spanish.hover {
-  color: #010101;
-}
-
-.botones-recomendacion {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-}
-
-.contenedor-cita {
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 32px 94px -8px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 32px 94px -8px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 32px 94px -8px rgba(0, 0, 0, 0.75);
-  background-color: rgb(196, 192, 192);
-  color: rgb(0, 0, 0);
-}
-
-.cita {
-  margin-top: 8vh;
-  margin-bottom: 8vh;
-  max-width: 600px;
-  height: 10vh;
-}
-
-.cita p {
-  animation-duration: 0.1s;
-}
-
-.about-me svg {
-  margin-left: 5px;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #000000;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-footer p {
-  font-size: 18px;
-}
-
-.contact-info {
-  margin-right: 20px;
-}
-
-footer img {
-  width: 30px;
-} */
-
 nav {
   margin-bottom: 20px;
   z-index: 1000;
@@ -322,7 +20,7 @@ nav button {
 
 body {
   padding-top: 80px;
-  color: white; /* Color inicial del texto */
+  color: rgb(175, 85, 85); /* Color inicial del texto */
   background-color: #333333; /* Color inicial de fondo */
   transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -331,15 +29,30 @@ body {
 .hero {
   padding-top: 180px;
   min-height: 100vh;
+  color: rgb(246, 122, 50);
+  text-shadow: rgb(50, 48, 48) 3px 0 10px;
 }
 
 .about {
   padding-top: 100px;
   min-height: 100vh;
+
 }
 
-.img {
-  padding-top: 24px;
+
+#about {
+  max-width: 800px;
+  background-color: #f89a28;
+  padding-left: 90px;
+  padding-right: 20px;
+}
+
+#acerca-de {
+  font-size: 3rem;
+}
+
+#servicios-a {
+  margin-bottom: 40px;
 }
 
 .services {
@@ -373,6 +86,10 @@ body {
   font-size: 1.5rem;
 }
 
+.cotizacion-button-container {
+  margin-top: 20px;
+}
+
 .contact {
   padding-top: 80px;
   min-height: 85vh;
@@ -388,7 +105,7 @@ footer {
 #japanese.hover,
 #portuguese.hover,
 #spanish.hover {
-  color: #e0b287;
+  color: #fffdfd;
 }
 
 #english,
@@ -397,7 +114,7 @@ footer {
 #spanish {
   transition: color 0.3s ease-in;
   /* color: rgb(200, 41, 41); */
-  color: #ebd3a3;
+  color: #ada7a7;
 }
 
 .background-video {
@@ -412,13 +129,40 @@ footer {
 
 .playfair-display-hero {
   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  font-weight: bold;
 }
 
-@media (max-width: 768px) {
-    .background-video {
-        display: none;
-    }
+#servicios {
+  max-width: 800px; /* Ajusta este valor según tus preferencias */
 }
+
+@media (max-width: 850px) {
+  .background-video {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 60px;
+    min-height: 100vh;
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(198, 192, 192) 3px 0 10px;
+  }
+
+  #english,
+  #japanese,
+  #portuguese,
+  #spanish {
+    transition: color 0.3s ease-in;
+    /* color: rgb(200, 41, 41); */
+    color: #b27036;
+  }
+  #english.hover,
+  #japanese.hover,
+  #portuguese.hover,
+  #spanish.hover {
+  color: #424242;
+}
+}
+
+
+
