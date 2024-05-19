@@ -56,13 +56,11 @@
         <h1 class="playfair-display-hero display-5">Servicios de traducción<br><span id="english">inglés</span> | <span id="japanese">japonés</span> | <span id="portuguese">portugués</span> | <span id="spanish">español</span></h1>
         <h3>Más de 12 años de experiencia en la industria ofreciendo servicios de calidad y precisión</h3><br><br>
 
-        <a href="#about" class="about-me">
-            <button type="button" class="btn btn-secondary">
-                Sobre mí
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                    <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/>
-                </svg>
-            </button>
+        <a href="#about" class="btn btn-secondary about-me">
+            Sobre mí
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/>
+            </svg>
         </a>
     </div>
 
@@ -74,13 +72,13 @@
         <p>Durante mis estudios universitarios, adquirí una sólida formación en <strong>traducción</strong> que me proporcionó las habilidades y conocimientos necesarios para destacarme en mi <strong>carrera profesional</strong>. A lo largo de los años, aprendí a dominar el estudio de las lenguas en todas sus facetas, desde la gramática hasta la comprensión oral y escrita, lo que me ha permitido traducir una <strong>amplia variedad de textos</strong> con precisión y fluidez. Además, <strong>me especialicé en la traducción de textos jurídicos y técnicos</strong>, así como en áreas relacionadas con tecnología y la ciencia.</p><br>
         <p>Actualmente tengo <strong>más de 10 años de experiencia</strong> en el rubro y ofrezco soluciones lingüísticas que ayudan a mis clientes hacer negocios con el resto del mundo. </p>
         <p>Si quieres saber más sobre mi trayectoria profesional, te invito a visitar mi <strong>perfil en LinkedIn</strong> siguiendo este enlace:</p>
-        <a href="https://www.linkedin.com/in/alvarodavilapinto/" target="_blank">
-            <button type="button" class="btn btn-light linkedin-btn">LinkedIn
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                    <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/>
-                </svg>
-            </button>
-        </a><br>
+        <button type="button" class="btn btn-light linkedin-btn" onclick="window.open('https://www.linkedin.com/in/alvarodavilapinto/', '_blank');">
+            LinkedIn
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/>
+            </svg>
+        </button>
+        <br>
     </div>
 
     <div id="servicios" class="container services">
@@ -148,11 +146,10 @@
             </button>
         </div>
         <div class="cotizacion-button-container">
-            <a href="#contacto">
-                <button type="button" class="btn btn-secondary">
-                    Solicite una Cotización
-                </button>
-            </a>
+            <button type="button" class="btn btn-secondary" onclick="window.location.href='#contacto';">
+                Solicite una Cotización
+            </button>
+            
         </div>
     </div>
 
