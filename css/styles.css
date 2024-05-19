@@ -4,7 +4,7 @@ nav {
 }
 
 .navbar-toggler {
-  margin-left: 2vw;
+  margin-left: 3vw;
 }
 
 nav ul {
@@ -75,7 +75,14 @@ body {
   padding-top: 100px;
   min-height: 100vh;
   text-align: center;
+  color: rgb(255, 255, 255);
 }
+
+#recomendaciones {
+  background-color: #000000;
+}
+
+
 
 .cita p {
   padding-left: 20vw;
@@ -83,7 +90,7 @@ body {
   padding-top: 8vw;
   padding-bottom: 8vw;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: calc(1rem + 1vw);
 }
 
 .cotizacion-button-container {
@@ -91,7 +98,9 @@ body {
 }
 
 .contact {
-  padding-top: 80px;
+  padding-top: 25vh;
+  margin-left: 25vw;
+  margin-right: 25vw;
   min-height: 85vh;
 }
 
@@ -136,6 +145,8 @@ footer {
   max-width: 800px; /* Ajusta este valor según tus preferencias */
 }
 
+
+
 @media (max-width: 850px) {
   .background-video {
     display: none;
@@ -145,7 +156,7 @@ footer {
     padding-top: 60px;
     min-height: 100vh;
     color: rgb(0, 0, 0);
-    text-shadow: rgb(198, 192, 192) 3px 0 10px;
+    text-shadow: none;
   }
 
   #english,
@@ -162,6 +173,30 @@ footer {
   #spanish.hover {
   color: #424242;
 }
+#about {
+  max-width: 800px;
+  background-color: #f89a28;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#acerca-de {
+  font-size: 2rem;
+}
+
+.linkedin-btn {
+  margin-bottom: 20px;
+}
+
+.cita p {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+  text-align: center;
+  font-size: calc(1rem + 1vw);
+}
+
 }
 
 

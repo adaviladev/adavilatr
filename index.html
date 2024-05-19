@@ -31,23 +31,23 @@
 
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-sm bg-light" data-bs-theme="light">
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#hero">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Acerca de</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#recomendaciones">Recomendaciones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                </ul>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#about">Acerca de</a>
+                  <a class="nav-link" href="#servicios">Servicios</a>
+                  <a class="nav-link" href="#recomendaciones">Recomendaciones</a>
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </div>
+              </div>
             </div>
-            <!-- <button id="dark-mode-button" class="btn btn-dark">Modo Oscuro</button> -->
-        </nav>
+          </nav>
     </header>
     <video class="background-video" src="video/1851768-uhd_3840_2160_30fps.mp4" autoplay="" id="heroVideo" loop=""
         muted=""></video>
@@ -84,7 +84,7 @@
         <p>Si quieres saber más sobre mi trayectoria profesional, te invito a visitar mi <strong>perfil en LinkedIn</strong> siguiendo
             este enlace:</p>
         <a href="https://www.linkedin.com/in/alvarodavilapinto/" target="_blank"><button type="button"
-                class="btn btn-light">LinkedIn<svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                class="btn btn-light linkedin-btn">LinkedIn<svg xmlns="http://www.w3.org/2000/svg" height="24px"
                     viewBox="0 -960 960 960" width="24px" fill="#5f6368">
                     <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
                 </svg></button></a>
@@ -96,7 +96,6 @@
     <!--     <div class="container img">
         <img id="yo" class="img-fluid" src="images/20211017_161048.jpg" alt="Yo">
     </div> -->
-
     <div id="servicios" class="container services">
         <div class="container " id="servicios-a">
             <h2>Servicios</h2>
@@ -171,7 +170,7 @@
     </div>
 
     </div>
-    <div id="recomendaciones" class="container recommendations">
+    <div id="recomendaciones" class="recommendations">
         <h2>Recomendado por sus clientes</h2>
         <p>Un experto en el que puede confiar</p>
         <div class="cita">
@@ -194,7 +193,7 @@
         </a></div>
 
     </div>
-    <div id="contacto" class="container contact">
+    <div id="contacto" class="contact">
         <h2>Contacto</h2>
         <p>Puede solicitar más información llamándome o enviándome un mensaje por WhatsApp al teléfono
             <strong>+56981838598</strong>, o bien por correo electrónico escribiéndome a <a class="mailto"
