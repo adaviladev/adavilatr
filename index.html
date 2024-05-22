@@ -46,25 +46,25 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#about">Acerca de</a>
-                        <a class="nav-link" href="#servicios">Servicios</a>
-                        <a class="nav-link" href="#recomendaciones">Recomendaciones</a>
-                        <a class="nav-link" href="#contacto">Contacto</a>
+                        <a class="nav-link" href="#about-section">Acerca de</a>
+                        <a class="nav-link" href="#servicios-section">Servicios</a>
+                        <a class="nav-link" href="#recomendaciones-section">Recomendaciones</a>
+                        <a class="nav-link" href="#contacto-section">Contacto</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <section class="container p-5" id="hero">
+    <section class="container p-5" id="hero-section">
         <video class="background-video" src="video/1851768-uhd_3840_2160_30fps.mp4" autoplay loop muted></video>
-        <div id="hero" class="container hero">
+        <div class="container hero">
             <h3 class="mi-nombre">Álvaro Dávila</h3>
             <h1 class="playfair-display-hero display-5">Servicios de traducción <br><span id="english">inglés</span> | <span
                     id="japanese">japonés</span> | <span id="portuguese">portugués</span> | <span
                     id="spanish">español</span></h1>
             <h3>Más de 12 años de experiencia en la industria ofreciendo servicios de calidad y precisión</h3><br><br>
-            <a href="#about" class="btn btn-secondary about-me">
+            <a href="#about" class="btn btn-secondary">
                 Sobre mí
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
                     <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z" />
@@ -75,8 +75,8 @@
 
     <!-- About Section-->
 
-    <section class="container p-5" id="about">
-        <div id="about" class="container py-5">
+    <section class="container p-5" id="about-section">
+        <div class="container">
             <h2 id="acerca-de">Acerca de mí</h2>
             <p>
                 Soy <strong>Licenciado en Lingüística aplicada a la traducción</strong> con mención en Inglés y Japonés
@@ -112,8 +112,8 @@
     <!-- End of About Section-->
     <!-- Services Section-->
 
-    <section class="container p-5 bg-secondary-subtle py-5" id="servicios">
-        <div class="container" id="servicios-a">
+    <section class="container p-5 bg-secondary-subtle " id="servicios-section">
+        <div class="container">
             <h2>Servicios</h2>
             <p>Servicios lingüísticos diseñados para satisfacer tus necesidades de comunicación global. Ya sea para
                 <strong>traducir o localizar</strong> contenido o para <strong>editar y corregir</strong> textos, mi
@@ -122,7 +122,7 @@
                     profesional</strong> en cualquier idioma y formato.
             </p>
         </div>
-        <div class="container">
+        <div class="container py-5">
             <div class="row text-center g-4">
                 <div class="col-md">
                     <div class="card bg-dark text-light">
@@ -132,23 +132,12 @@
                             </div>
                             <h3 class="card-title mb-3">Localización y Transcreación</h3>
                             <p class="card-text">
-                                <strong>Tu contenido adaptado a tu audiencia.</strong> Como traductor profesional,
-                                ofrezco
-                                servicios de transcreación y localización que llevan tu contenido más allá de las
-                                barreras del
-                                idioma. No solo traduzco palabras, sino que adapto mensajes para que sean
-                                culturalmente
-                                apropiados y contextualmente precisos en cada mercado objetivo. Con experiencia en
-                                inglés,
-                                portugués, japonés y español, me aseguro de que cada detalle de tu mensaje sea
-                                auténtico y
-                                efectivo, permitiendo que tu marca se comunique de manera convincente y atractiva en
-                                cualquier
-                                idioma. Potencia tu alcance internacional con traducciones que conectan de verdad
+                                <strong>Tu contenido adaptado a tu audiencia.</strong> Servicio de transcreación y localización que rompen las
+                                barreras idiomáticas. Potencia tu alcance internacional con traducciones que conectan de verdad
                                 con tu
                                 audiencia global.
                             </p>
-                            <a href="#" class="btn btn-primary">Saber más</a>
+                            <a href="#" class="btn btn-secondary">Saber más</a>
 
                         </div>
                     </div>
@@ -166,15 +155,9 @@
                                 coherencia
                                 y precisión. Cada documento se analiza a fondo para corregir errores gramaticales,
                                 ortográficos
-                                y de puntuación, así como para mejorar la estructura y el flujo del texto. La
-                                atención al
-                                detalle y el profundo conocimiento de los distintos estilos y normas aseguran que
-                                tus escritos
-                                sean presentados de manera profesional y efectiva, manteniendo la integridad y el
-                                propósito
-                                original del contenido.
+                                y de puntuación, así como para mejorar la estructura y el flujo del texto.
                             </p>
-                            <a href="#" class="btn btn-primary">Saber más</a>
+                            <a href="#" class="btn btn-secondary">Saber más</a>
 
                         </div>
                     </div>
@@ -190,7 +173,7 @@
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio vitae omnis, ullam
                                 alias voluptatum explicabo.
                             </p>
-                            <a href="#" class="btn btn-primary">Saber más</a>
+                            <a href="#" class="btn btn-secondary">Saber más</a>
 
                         </div>
                     </div>
@@ -200,52 +183,10 @@
     </section>
 
     <!-- End of Services Section-->
+    <!-- Recomendaciones Section-->
 
-    <!--         <div class="accordion accordion-flush bg-secondary-subtle container" id="accordionFlushExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Localización y Transcreación
-                    </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        1
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Traducción Jurídica
-                    </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        2
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Edición/Proofreading
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        3
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-    <section class="container p-5 bg-dark-subtle py-5" id="recomendaciones">
-        <div id="recomendaciones" class="recommendations">
+    <section class="container p-5 bg-dark-subtle " id="recomendaciones-section">
+        <div class="recommendations">
             <h2>Recomendado por sus clientes</h2>
             <p>Un experto en el que puede confiar</p>
             <div class="cita">
@@ -273,8 +214,8 @@
         </div>
     </section>
 
-    <section class="container p-5 bg-light-subtle py-5" id="contacto">
-        <div id="contacto" class="contact">
+    <section class="container p-5 bg-light-subtle " id="contacto-section">
+        <div class="contact">
             <h2>Contacto</h2>
             <p>Puede solicitar más información llamándome o enviándome un mensaje por WhatsApp al teléfono
                 <strong>+56981838598</strong>, o bien por correo electrónico escribiéndome a <a class="mailto"
