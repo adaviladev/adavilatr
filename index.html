@@ -35,7 +35,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm bg-body-tertiary bg-opacity-100 fixed-top">
+        <nav class="navbar navbar-expand-sm fixed-top bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -60,16 +60,17 @@
         <video class="background-video" src="video/1851768-uhd_3840_2160_30fps.mp4" autoplay loop muted></video>
         <div class="container hero">
             <h3 class="mi-nombre">Álvaro Dávila</h3>
-            <h1 class="playfair-display-hero display-5">Servicios de traducción <br><span id="english">inglés</span> | <span
-                    id="japanese">japonés</span> | <span id="portuguese">portugués</span> | <span
+            <h1 class="playfair-display-hero display-5">Servicios de traducción <br><span id="english">inglés</span> |
+                <span id="japanese">japonés</span> | <span id="portuguese">portugués</span> | <span
                     id="spanish">español</span></h1>
-            <h3>Más de 12 años de experiencia en la industria ofreciendo servicios de calidad y precisión</h3><br><br>
-            <a href="#about" class="btn btn-secondary">
+            <h3>Más de 12 años entregando traducciones precisas y de calidad.</h3><br><br>
+            <!-- <a href="#about" class="btn btn-secondary">
                 Sobre mí
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#5f6368">
                     <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z" />
                 </svg>
-            </a>
+            </a> -->
         </div>
     </section>
 
@@ -78,6 +79,8 @@
     <section class="container p-5" id="about-section">
         <div class="container">
             <h2 id="acerca-de">Acerca de mí</h2>
+            <p>¡Hola! Mi nombre es Álvaro y te doy la bienvenida a mi sitio web profesional.
+            </p><br>
             <p>
                 Soy <strong>Licenciado en Lingüística aplicada a la traducción</strong> con mención en Inglés y Japonés
                 de
@@ -94,7 +97,7 @@
                 ciencia.
             </p><br>
             <p>Actualmente tengo <strong>más de 10 años de experiencia</strong> en el rubro y ofrezco soluciones
-                lingüísticas que ayudan a mis clientes hacer negocios con el resto del mundo. </p>
+                lingüísticas que ayudan a mis clientes hacer negocios con el resto del mundo. </p><br>
             <p>Si quieres saber más sobre mi trayectoria profesional, te invito a visitar mi <strong>perfil en
                     LinkedIn</strong> siguiendo este enlace:</p>
             <button type="button" class="btn btn-light linkedin-btn"
@@ -132,8 +135,10 @@
                             </div>
                             <h3 class="card-title mb-3">Localización y Transcreación</h3>
                             <p class="card-text">
-                                <strong>Tu contenido adaptado a tu audiencia.</strong> Servicio de transcreación y localización que rompen las
-                                barreras idiomáticas. Potencia tu alcance internacional con traducciones que conectan de verdad
+                                <strong>Tu contenido adaptado a tu audiencia.</strong> Servicio de transcreación y
+                                localización que rompen las
+                                barreras idiomáticas. Potencia tu alcance internacional con traducciones que conectan de
+                                verdad
                                 con tu
                                 audiencia global.
                             </p>
@@ -170,8 +175,10 @@
                             </div>
                             <h3 class="card-title mb-3">Consultoría</h3>
                             <p class="card-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio vitae omnis, ullam
-                                alias voluptatum explicabo.
+                                <strong>Potencie su proyecto con la orientación de un experto</strong>. Asesoramiento
+                                personalizado ya sea que esté buscando
+                                optimizar procesos, mejorar la eficiencia operativa o desarrollar estrategias
+                                innovadoras, estoy aquí para ofrecer soluciones prácticas y adaptadas a sus necesidades. Confíe en la experiencia para llevar su proyecto al siguiente nivel.
                             </p>
                             <a href="#" class="btn btn-secondary">Saber más</a>
 
@@ -186,31 +193,31 @@
     <!-- Recomendaciones Section-->
 
     <section class="container p-5 bg-dark-subtle " id="recomendaciones-section">
-        <div class="recommendations">
+        <div>
             <h2>Recomendado por sus clientes</h2>
             <p>Un experto en el que puede confiar</p>
-            <div class="cita">
-                <p class="contenedor-cita">"Aquí va tu cita"</p>
-            </div>
-            <div class="botones-recomendacion btn-group">
-                <button class="btn btn-light" id="anterior">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                        fill="#5f6368">
-                        <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
-                    </svg>
-                </button>
-                <button class="btn btn-light" id="siguiente">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                        fill="#5f6368">
-                        <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
-                    </svg>
-                </button>
-            </div>
-            <div class="cotizacion-button-container">
-                <button type="button" class="btn btn-secondary" onclick="window.location.href='#contacto';">
-                    Solicite una Cotización
-                </button>
-            </div>
+        <div class="cita">
+            <p class="contenedor-cita">"Aquí va tu cita"</p>
+        </div>
+        <div class="botones-recomendacion btn-group">
+            <button class="btn btn-light" id="anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#5f6368">
+                    <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+                </svg>
+            </button>
+            <button class="btn btn-light" id="siguiente">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#5f6368">
+                    <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                </svg>
+            </button>
+        </div>
+        <div class="cotizacion-button-container">
+            <button type="button" class="btn btn-secondary" onclick="window.location.href='#contacto';">
+                Solicite una Cotización
+            </button>
+        </div>
         </div>
     </section>
 
@@ -218,20 +225,18 @@
         <div class="contact">
             <h2>Contacto</h2>
             <p>Puede solicitar más información llamándome o enviándome un mensaje por WhatsApp al teléfono
-                <strong>+56981838598</strong>, o bien por correo electrónico escribiéndome a <a class="mailto"
-                    href="mailto:adavilatr@gmail.com"><strong>adavilatr@gmail.com</strong></a>.
+                <strong><li class="list-unstyled"><i class="bi bi-whatsapp"></i> <a href="https://wa.me/+56981838598">+569 8183 8598</a></li></strong><br> o bien por correo electrónico escribiéndome a <li class="list-unstyled"><i class="bi bi-envelope"></i> <a href="mailto:adavilatr@gmail.com"><strong>adavilatr@gmail.com</strong></a></li>
             </p>
         </div>
     </section>
 
-    <footer class="bg-dark text-center text-white py-3">
+    <footer class="bg-dark text-center text-white">
         <div class="container">
-            <ul class="list-unstyled">
-                <li>+569 81838598</li>
-                <li class="link-primary link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover"><a
-                        href="mailto:adavilatr@gmail.com">adavilatr@gmail.com</a></li>
-                <li class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><a
-                        href="https://www.linkedin.com/in/alvarodavilapinto/">LinkedIn</a></li>
+            <ul class="list-unstyled d-flex justify-content-evenly p-5 align-content-center">
+                <li><i class="bi bi-phone"></i> <a href="tel:+56981838598">+569 8183 8598</a></li>
+                <li><i class="bi bi-whatsapp"></i> <a href="https://wa.me/+56981838598">WhatsApp: +569 8183 8598</a></li>
+                <li><i class="bi bi-envelope"></i> <a href="mailto:adavilatr@gmail.com">adavilatr@gmail.com</a></li>
+                <li><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/alvarodavilapinto/">LinkedIn</a></li>
             </ul>
         </div>
     </footer>

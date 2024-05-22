@@ -10,7 +10,7 @@ body {
 #hero-section {
   margin-top: 56px;
   min-height: 100vh;
-  color: rgb(246, 122, 50);
+  color: rgb(255, 119, 0);
   text-shadow: rgb(50, 48, 48) 3px 0 10px;
   font-family: "Playfair Display", serif;
   font-weight: bold;
@@ -73,7 +73,7 @@ body {
   }
 }
 
-#about-section, #servicios-section, #recomendaciones-section, #contacto-section {
+#about-section, #servicios-section, #recomendaciones-section {
   padding-top: 100px !important;
   min-height: 100vh !important;
 }
@@ -94,14 +94,14 @@ body {
 
 #recomendaciones-section {
   text-align: center;
-  color: rgb(177, 100, 33);
+  color: rgb(110, 82, 57);
 }
 
 .cita p {
   padding-left: 20vw;
   padding-right: 20vw;
-  padding-top: 8vw;
-  padding-bottom: 8vw;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
   text-align: center;
   font-size: calc(1rem + 1vw);
 }
@@ -111,6 +111,11 @@ body {
     padding-left: 5vw;
     padding-right: 5vw;
   }
+}
+
+#contacto-section {
+  padding-top: 100px !important;
+  min-height: 85vh !important;
 }
 
 footer {
