@@ -1,6 +1,11 @@
+html p{
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
+}
 
 html p {
   font-size: calc(16px + 0.2vw) !important;
+
 }
 
 h2 {
@@ -16,7 +21,10 @@ h2 {
   }
 }
 
-
+nav ul {
+  font-family: "Lexend", sans-serif;
+  font-weight: 200;
+}
 
 #hero-section {
   margin-top: 56px;
@@ -110,8 +118,14 @@ h2 {
   background-color: #f89a28;
 }
 
+#about-section h2 {
+  color: #ffd471;
+}
+
 .card-text {
   font-size: 16px !important;
+  font-family: "Lexend", sans-serif;
+  font-weight: 200;
 }
 
 .navbar {
@@ -121,6 +135,8 @@ h2 {
 #recomendaciones-section {
   text-align: center;
   color: rgb(42, 40, 39);
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
 }
 
 .cita p {
