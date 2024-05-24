@@ -80,8 +80,6 @@ body {
 
 @media (max-width: 850px) {
   #hero-section, #about-section, #servicios-section, #recomendaciones-section, #contacto-section {
-    margin-left: 16px !important;
-    margin-right: 16px !important;
     padding-left: 16px !important;
     padding-right: 16px !important;
   }
