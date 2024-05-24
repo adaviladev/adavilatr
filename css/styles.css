@@ -7,6 +7,17 @@ body {
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+@media (max-width: 850px) {
+  body {
+    padding-top: 40px;
+    color: rgb(175, 85, 85); /* Color inicial del texto */
+    background-color: #333333; /* Color inicial de fondo */
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+}
+
+
+
 #hero-section {
   margin-top: 56px;
   min-height: 100vh;
@@ -18,7 +29,8 @@ body {
 
 @media (max-width: 850px) {
   #hero-section {
-    padding-top: 40px;
+    margin-top: 16px !important;
+    padding-top: 40px !important;
     min-height: 100vh;
     color: rgb(0, 0, 0);
     text-shadow: none;
@@ -132,6 +144,22 @@ footer a:hover {
   text-decoration: none; /* Asegura que el subrayado se mantenga removido al pasar el mouse */
 }
 
+@media (max-width: 850px) {
+
+  footer {
+    height: fit-content;
+  }
+
+
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer li {
+    margin-bottom: 0.5rem;
+  }
+}
 
 .cotizacion-button-container {
   margin-top: 20px;
