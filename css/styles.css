@@ -1,10 +1,10 @@
 
+html p {
+  font-size: calc(16px + 0.2vw) !important;
+}
 
-body {
-  padding-top: 80px;
-  color: rgb(175, 85, 85); /* Color inicial del texto */
-  background-color: #333333; /* Color inicial de fondo */
-  transition: background-color 0.5s ease, color 0.5s ease;
+h2 {
+  margin-bottom: 5vh !important;
 }
 
 @media (max-width: 850px) {
@@ -20,11 +20,17 @@ body {
 
 #hero-section {
   margin-top: 56px;
+  padding-top: 16vh !important;
   min-height: 100vh;
   color: rgb(255, 119, 0);
   text-shadow: rgb(50, 48, 48) 3px 0 10px;
   font-family: "Playfair Display", serif;
   font-weight: bold;
+  text-align: right;
+}
+
+#hero-section h3 {
+  color:#ffffff ;
 }
 
 @media (max-width: 850px) {
@@ -36,6 +42,7 @@ body {
     text-shadow: none;
     /*background-color: #ede5df;*/
     background-color: #181b1b;
+    text-align: left;
   }
 }
 
@@ -44,9 +51,9 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  object-fit: cover;
+  object-fit:cover;
   z-index: -1;
-  filter: blur(3px) brightness(50%) saturate(10%);
+  filter: brightness(50%) saturate(10%);
 }
 
 @media (max-width: 850px) {
@@ -89,6 +96,7 @@ body {
 #about-section, #servicios-section, #recomendaciones-section {
   padding-top: 100px !important;
   min-height: 100vh !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
 @media (max-width: 850px) {
@@ -102,6 +110,17 @@ body {
   background-color: #f89a28;
 }
 
+.card-text {
+  font-size: 16px !important;
+}
+
+.card-body {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.navbar {
+  font-size: calc(16px + 0.2vw) !important;
+}
 
 #recomendaciones-section {
   text-align: center;
@@ -114,7 +133,7 @@ body {
   padding-top: 4vw;
   padding-bottom: 4vw;
   text-align: center;
-  font-size: calc(1rem + 1vw);
+  font-size: calc(1rem + 0.5vw);
 }
 
 @media (max-width: 850px) {
