@@ -30,11 +30,12 @@ body {
 @media (max-width: 850px) {
   #hero-section {
     margin-top: 16px !important;
-    padding-top: 40px !important;
+    padding-top: 20vh !important;
     min-height: 100vh;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-shadow: none;
-    background-color: #ede5df;
+    /*background-color: #ede5df;*/
+    background-color: #181b1b;
   }
 }
 
