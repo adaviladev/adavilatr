@@ -1,0 +1,249 @@
+html p{
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
+}
+
+html p {
+  font-size: calc(16px + 0.2vw) !important;
+
+}
+
+h2 {
+  margin-bottom: 5vh !important;
+}
+
+@media (max-width: 850px) {
+  body {
+    padding-top: 40px;
+    color: rgb(175, 85, 85); /* Color inicial del texto */
+    background-color: #333333; /* Color inicial de fondo */
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+}
+
+nav ul {
+  font-family: "Lexend", sans-serif;
+  font-weight: 200;
+}
+
+#hero-section {
+  margin-top: 56px;
+  padding-top: 16vh !important;
+  min-height: 100vh;
+  color: rgb(255, 119, 0);
+  text-shadow: rgb(50, 48, 48) 3px 0 10px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  text-align: right;
+}
+
+.language-selector {
+  justify-content: right;
+}
+
+@media (max-width: 850px) {
+  .language-selector {
+    justify-content: left;
+  }
+}
+
+#hero-section h3 {
+  color:#ffffff ;
+}
+
+@media (max-width: 850px) {
+  #hero-section {
+    margin-top: 16px !important;
+    padding-top: 40vh !important;
+    min-height: 90vh !important;
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+    /*background-color: #ede5df;*/
+    background-color: #181b1b;
+    text-align: left;
+  }
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit:cover;
+  z-index: -1;
+  filter: brightness(50%) saturate(10%);
+}
+
+@media (max-width: 850px) {
+  .background-video {
+    display: none;
+  }
+}
+
+#english,
+#japanese,
+#portuguese,
+#spanish {
+  transition: color 0.3s ease-in;
+  color: #ada7a7;
+}
+
+#english.hover,
+#japanese.hover,
+#portuguese.hover,
+#spanish.hover {
+  color: #fffdfd;
+}
+
+@media (max-width: 850px) {
+  #english,
+  #japanese,
+  #portuguese,
+  #spanish {
+    color: #e97e21;
+  }
+
+  #english.hover,
+  #japanese.hover,
+  #portuguese.hover,
+  #spanish.hover {
+    color: #424242;
+  }
+}
+
+#about-section, #servicios-section, #recomendaciones-section {
+  padding-top: 100px !important;
+  min-height: 100vh !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+@media (max-width: 850px) {
+  #hero-section, #about-section, #servicios-section, #recomendaciones-section, #contacto-section {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+#about-section {
+  background-color: #f89a28;
+}
+
+#about-section h2 {
+  color: #ffd471;
+}
+
+.card-text {
+  font-size: 16px !important;
+  font-family: "Lexend", sans-serif;
+  font-weight: 200;
+}
+
+.navbar {
+  font-size: calc(16px + 0.2vw) !important;
+}
+
+#recomendaciones-section {
+  text-align: center;
+  color: rgb(42, 40, 39);
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
+}
+
+.cita p {
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  text-align: center;
+  font-size: calc(1rem + 0.5vw);
+}
+
+@media (max-width: 850px) {
+  .cita p {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+#contacto-section {
+  padding-top: 100px !important;
+  min-height: 85vh !important;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 15vh;
+}
+
+footer a {
+  color: white; /* Cambia el color del texto a blanco */
+  text-decoration: none; /* Remueve el subrayado */
+}
+
+footer a:hover {
+  color: white; /* Asegura que el color del texto se mantenga blanco al pasar el mouse */
+  text-decoration: none; /* Asegura que el subrayado se mantenga removido al pasar el mouse */
+}
+
+@media (max-width: 850px) {
+
+  footer {
+    height: fit-content;
+  }
+
+
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.cotizacion-button-container {
+  margin-top: 20px;
+}
+
+.linkedin-btn {
+  margin-bottom: 20px;
+}
+
+
+
+.language-selector {
+  display: flex;
+  gap: 10px;
+}
+
+.language-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.language-button.active {
+  background-color: #007bff; /* Default button color */
+  color: #fff; /* Default text color */
+}
+
+/* Dark mode */
+.dark-mode .language-button {
+  background-color: #343a40; /* Dark mode button color */
+  color: #fff; /* Dark mode text color */
+}
+
+.dark-mode .language-button.active {
+  background-color: #0056b3; /* Active dark mode button color */
+}
+
+/* Hover styles */
+.language-button:hover {
+  background-color: #0056b3; /* Hover button color */
+  color: #fff; /* Hover text color */
+}
