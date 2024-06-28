@@ -101,14 +101,14 @@ nav ul {
   }
 }
 
-#about-section, #servicios-section, #recomendaciones-section {
+#about-section, #servicios-section, #recomendaciones-section, #blog-section, #contacto-section {
   padding-top: 100px !important;
   min-height: 100vh !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
 @media (max-width: 850px) {
-  #hero-section, #about-section, #servicios-section, #recomendaciones-section, #contacto-section {
+  #hero-section, #about-section, #servicios-section, #recomendaciones-section, #blog-section, #contacto-section {
     padding-left: 16px !important;
     padding-right: 16px !important;
   }
@@ -199,4 +199,63 @@ footer a:hover {
 
 .linkedin-btn {
   margin-bottom: 20px;
+}
+
+/* Blog */
+
+#blog-section {
+  background-color: #f4f4f4;
+  padding: 2rem 0;
+}
+
+#blog-section h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 1.5rem;
+}
+
+#blog-posts article {
+  background-color: #fff;
+  padding: 1.5rem !important;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#blog-posts article h3 {
+  margin-top: 0;
+}
+
+#blog-posts article p small {
+  display: block;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+#blog-posts article p strong {
+  font-weight: bold;
+}
+
+#blog-posts article p em {
+  font-style: italic;
+}
+
+
+#blog-navigation {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50%;
+  margin: auto;
+}
+
+#blog-navigation .btn {
+  min-width: 100px;
+}
+
+@media (max-width: 850px) {
+  #blog-navigation {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+  }
 }
