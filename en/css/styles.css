@@ -1,11 +1,10 @@
-html p{
+html p {
   font-family: "Lexend", sans-serif;
   font-weight: 300;
 }
 
 html p {
   font-size: calc(16px + 0.2vw) !important;
-
 }
 
 h2 {
@@ -26,6 +25,28 @@ nav ul {
   font-weight: 200;
 }
 
+#language-selector {
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+@media (max-width: 850px) {
+  #language-selector {
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  margin-top: 50px;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+  align-items: center;
+  }
+}
+
 #hero-section {
   margin-top: 56px;
   padding-top: 16vh !important;
@@ -37,18 +58,8 @@ nav ul {
   text-align: right;
 }
 
-.language-selector {
-  justify-content: right;
-}
-
-@media (max-width: 850px) {
-  .language-selector {
-    justify-content: left;
-  }
-}
-
 #hero-section h3 {
-  color:#ffffff ;
+  color: #ffffff;
 }
 
 @media (max-width: 850px) {
@@ -69,7 +80,7 @@ nav ul {
   top: 0;
   left: 0;
   width: 100%;
-  object-fit:cover;
+  object-fit: cover;
   z-index: -1;
   filter: brightness(50%) saturate(10%);
 }
@@ -111,25 +122,46 @@ nav ul {
   }
 }
 
-#about-section, #servicios-section, #recomendaciones-section {
+#about-section,
+#servicios-section,
+#recomendaciones-section,
+#blog-section,
+#contacto-section {
   padding-top: 100px !important;
   min-height: 100vh !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
 @media (max-width: 850px) {
-  #hero-section, #about-section, #servicios-section, #recomendaciones-section, #contacto-section {
+  #hero-section,
+  #about-section,
+  #servicios-section,
+  #recomendaciones-section,
+  #blog-section,
+  #contacto-section {
     padding-left: 16px !important;
     padding-right: 16px !important;
   }
 }
 
 #about-section {
-  background-color: #f89a28;
+  /* background-color: #e29633; */
+  background-color: #eae6e6;
+  color: #26292e;
 }
 
-#about-section h2 {
-  color: #ffd471;
+#acerca-de {
+  font-size: calc(28px + 0.3vw);
+  font-family: "Libre Caslon Text", serif;
+  font-style: normal;
+}
+
+#quote-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px !important;
 }
 
 .card-text {
@@ -187,11 +219,9 @@ footer a:hover {
 }
 
 @media (max-width: 850px) {
-
   footer {
     height: fit-content;
   }
-
 
   footer ul {
     flex-direction: column;
@@ -208,42 +238,64 @@ footer a:hover {
 }
 
 .linkedin-btn {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
+/* Blog */
 
+#blog-section {
+  background-color: #f4f4f4;
+  padding: 2rem 0;
+}
 
-.language-selector {
+#blog-section h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 1.5rem;
+}
+
+#blog-posts article {
+  background-color: #fff;
+  padding: 1.5rem !important;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#blog-posts article h3 {
+  margin-top: 0;
+}
+
+#blog-posts article p small {
+  display: block;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+#blog-posts article p strong {
+  font-weight: bold;
+}
+
+#blog-posts article p em {
+  font-style: italic;
+}
+
+#blog-navigation {
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
+  max-width: 50%;
+  margin: auto;
 }
 
-.language-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+#blog-navigation .btn {
+  min-width: 100px;
 }
 
-.language-button.active {
-  background-color: #007bff; /* Default button color */
-  color: #fff; /* Default text color */
-}
-
-/* Dark mode */
-.dark-mode .language-button {
-  background-color: #343a40; /* Dark mode button color */
-  color: #fff; /* Dark mode text color */
-}
-
-.dark-mode .language-button.active {
-  background-color: #0056b3; /* Active dark mode button color */
-}
-
-/* Hover styles */
-.language-button:hover {
-  background-color: #0056b3; /* Hover button color */
-  color: #fff; /* Hover text color */
+@media (max-width: 850px) {
+  #blog-navigation {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+  }
 }

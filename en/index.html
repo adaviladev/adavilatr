@@ -12,9 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
 
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
@@ -38,17 +38,14 @@
 
 <body>
     <header>
-        <!-- Language Selector -->
-
-    
         <nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark">
 
             <div class="container-fluid">
-                    <button class="rounded-0 border-dark navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <button class="rounded-0 border-dark navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -71,8 +68,29 @@
             </div>
         </nav>
     </header>
-    
+    <!-- Language Selector -->
+    <section class="container p-2 bg-dark" id="language-selector">
 
+        <div class="language-selector">
+            <a href="https://adaviladev.github.io/adavilatr/en/">
+                <button class="language-button btn btn-secondary rounded-1 p-1 mt-1 bg-dark"
+                    data-lang="en">English</button>
+            </a>
+            <a href="https://adaviladev.github.io/adavilatr">
+                <button class="language-button btn btn-secondary rounded-1 p-1 mt-1 bg-dark"
+                    data-lang="es">Español</button>
+            </a>
+            <a href="https://adaviladev.github.io/adavilatr/jp/">
+                <button class="language-button btn btn-secondary rounded-1 p-1 mt-1 bg-dark" data-lang="jp">日本語</button>
+            </a>
+            <a href="https://adaviladev.github.io/adavilatr/pt/">
+                <button class="language-button btn btn-secondary rounded-1 p-1 mt-1 bg-dark"
+                    data-lang="pt">Português</button>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Hero Section-->
     <section class="container p-5" id="hero-section">
 
         <video class="background-video" src="video/1851768-uhd_3840_2160_30fps.mp4" autoplay loop muted></video>
@@ -82,21 +100,9 @@
                 <span id="japanese">Japanese</span> | <span id="portuguese">Portuguese</span> | <span
                     id="spanish">Spanish</span>
             </h1>
-            <h3>Bringing over 12 years of expertise to consistently deliver precise, high-quality translations.</h3><br><br>
-            <div class="language-selector">
-                <a href="https://adaviladev.github.io/adavilatr/en/" >
-                    <button class="language-button btn btn-secondary rounded-0 p-1" data-lang="es">English</button>
-                </a>
-                <a href="https://adaviladev.github.io/adavilatr/es/" >
-                    <button class="language-button btn btn-secondary rounded-0 p-1" data-lang="es">Español</button>
-                </a>
-                <a href="https://adaviladev.github.io/adavilatr/jp/" >
-                    <button class="language-button btn btn-secondary rounded-0 p-1" data-lang="jp">日本語</button>
-                </a>
-                <a href="https://adaviladev.github.io/adavilatr/pt/" >
-                    <button class="language-button btn btn-secondary rounded-0 p-1" data-lang="jp">Português</button>
-                </a>
-            </div>
+            <h3>Bringing over 12 years of expertise to consistently deliver precise, high-quality translations.</h3>
+            <br><br>
+
             <!-- <a href="#about" class="btn btn-secondary">
                 Sobre mí
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -112,33 +118,47 @@
     <section class="container p-5 mb-2" id="about-section">
         <div class="container">
             <h2 id="acerca-de">About me</h2>
-            <p>¡Hello! I'm  <strong>Álvaro</strong>, and I'm thrilled to welcome you to my website.</p>
-            <p><strong><em>Bachelor of Applied Linguistics in Translation</em></strong></p>
-            <p>I hold a Bachelor's degree in Applied Linguistics with a focus on Translation, specializing in English and Japanese from the University of Santiago de Chile. My university studies equipped me with a solid foundation in translation, providing me with the skills and knowledge needed to excel in my professional career.</p> 
-            <p><strong><em>A diverse portfolio of clients</em></strong></p>
-            <p>I've had the privilege of working with a diverse range of clients, from law firms and mining companies to IT firms, port engineering companies, advertising agencies, and government entities dedicated to e-government. This variety of clients has given me unique experience in translating for different sectors, allowing me to develop a deep understanding of specialized terminology and tailor my services to the specific needs of each industry.</p>
-            <p><strong><em>Consolidated experience in translation</em></strong></p>
-            <p>With over 10 years of professional experience in translation, I've honed my linguistic and technical skills, tackling a wide variety of projects with precision and efficiency. My commitment to excellence and client satisfaction has been a constant throughout my career, and I'm eager to put my skills to work for your translation needs.</p>
-            
-            <button type="button" class="btn btn-light linkedin-btn"
-                onclick="window.open('https://www.linkedin.com/in/alvarodavilapinto/', '_blank');">
-                LinkedIn
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                    fill="#5f6368">
-                    <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
-                </svg>
-            </button>
+            <p>I hold a Bachelor's degree in Applied Linguistics with a focus on Translation, specializing in English
+                and Japanese from the University of Santiago de Chile. My university studies equipped me with a solid
+                foundation in translation, providing me with the skills and knowledge needed to excel in my professional
+                career.</p>
+            <p><strong>A diverse portfolio of clients</strong></p>
+            <p>I've had the privilege of working with a diverse range of clients, from law firms and mining companies to
+                IT firms, port engineering companies, advertising agencies, and government entities dedicated to
+                e-government. This variety of clients has given me unique experience in translating for different
+                sectors, allowing me to develop a deep understanding of specialized terminology and tailor my services
+                to the specific needs of each industry.</p>
+            <p><strong>Consolidated experience in translation</strong></p>
+            <p>With over 10 years of professional experience in translation, I've honed my linguistic and technical
+                skills, tackling a wide variety of projects with precision and efficiency. My commitment to excellence
+                and client satisfaction has been a constant throughout my career, and I'm eager to put my skills to work
+                for your translation needs.</p>
             <br>
         </div>
     </section>
 
     <!-- End of About Section-->
+    <!-- Quote Section-->
+
+    <section class="container p-5 mb-2" id="quote-section">
+        <p lang="es"><q>The limits of my language mean the limits of my world</q>, - Ludwig Wittgenstein</p>
+
+        <div class="cotizacion-button-container">
+            <button type="button" class="btn btn-secondary" onclick="window.location.href='#contacto-section';">
+                Request a Quote
+            </button>
+        </div>
+    </section>
+    <!-- End of Quote Section-->
     <!-- Services Section-->
 
     <section class="container p-5 bg-secondary-subtle mb-2" id="servicios-section">
         <div class="container">
             <h2>Services</h2>
-            <p><strong>Linguistic services tailored to meet your global communication needs</strong>. Whether you need document translation, content adaptation for various languages and cultures, or simply text review and correction, I guarantee precise and high-quality results. With a keen focus on detail, consistency, and cultural context, rest assured that your message will be clear, effective, and professional.
+            <p><strong>Linguistic services tailored to meet your global communication needs</strong>. Whether you need
+                document translation, content adaptation for various languages and cultures, or simply text review and
+                correction, I guarantee precise and high-quality results. With a keen focus on detail, consistency, and
+                cultural context, rest assured that your message will be clear, effective, and professional.
             </p>
         </div>
         <div class="container py-5">
@@ -152,7 +172,9 @@
                                 </div>
                                 <h3 class="card-title mb-3">Translation</h3>
                                 <p class="card-text">
-                                    Expand your global reach by conveying your message without language barriers. Connect with your international audience with the expertise of a translation specialist.
+                                    Expand your global reach by conveying your message without language barriers.
+                                    Connect with your international audience with the expertise of a translation
+                                    specialist.
                                 </p>
                                 <!-- <a href="#" class="btn btn-secondary">Saber más</a> -->
                             </div>
@@ -166,7 +188,8 @@
                                 </div>
                                 <h3 class="card-title mb-3">Localization and Transcreation</h3>
                                 <p class="card-text">
-                                    Tailor your content to your global audience. Break language barriers, enhance your international reach with adaptations that truly resonate with your audience.
+                                    Tailor your content to your global audience. Break language barriers, enhance your
+                                    international reach with adaptations that truly resonate with your audience.
                                 </p>
                                 <!-- <a href="#" class="btn btn-secondary">Saber más</a> -->
                             </div>
@@ -180,14 +203,16 @@
                                 </div>
                                 <h3 class="card-title mb-3">Editing and Proofreading</h3>
                                 <p class="card-text">
-                                    Refine your texts with formatting, style, and writing corrections. Meticulous revision ensures clarity, coherence, and precision by correcting grammar, spelling, and punctuation errors, as well as enhancing the structure and flow of the text.
+                                    Refine your texts with formatting, style, and writing corrections. Meticulous
+                                    revision ensures clarity, coherence, and precision by correcting grammar, spelling,
+                                    and punctuation errors, as well as enhancing the structure and flow of the text.
                                 </p>
                                 <!-- <a href="#" class="btn btn-secondary">Saber más</a> -->
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- <div class="col-md">
                     <div class="card bg-dark text-light">
                         <div class="card-body text-center">
@@ -252,6 +277,14 @@
                         class="bi bi-envelope"></i> <a
                         href="mailto:adavilatr@gmail.com"><strong>adavilatr@gmail.com</strong></a></li>
             </p>
+            <button type="button" class="btn btn-secondary linkedin-btn"
+                onclick="window.open('https://www.linkedin.com/in/alvarodavilapinto/', '_blank');">
+                LinkedIn
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#000000">
+                    <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
+                </svg>
+            </button>
         </div>
     </section>
 
