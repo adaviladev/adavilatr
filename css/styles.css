@@ -1,3 +1,7 @@
+body {
+    background-color: #465059 !important;
+}
+
 html p {
   font-family: "Lexend", sans-serif;
   font-weight: 300;
@@ -14,8 +18,7 @@ h2 {
 @media (max-width: 850px) {
   body {
     padding-top: 40px;
-    color: rgb(175, 85, 85); /* Color inicial del texto */
-    background-color: #333333; /* Color inicial de fondo */
+    color: #424242; /* Color de texto actualizado */
     transition: background-color 0.5s ease, color 0.5s ease;
   }
 }
@@ -34,40 +37,32 @@ nav ul {
   z-index: 10000 !important;
 }
 
-#language-selector {
-  display: inline-block;
-  width: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10000;
-}
-
 @media (max-width: 850px) {
   #language-selector {
-  display: inline-block;
-  width: auto;
-  position: absolute;
-  margin-top: 50px;
-  top: 0;
-  z-index: 10000;
-  width: 100%;
-  align-items: center;
+    display: inline-block;
+    width: auto;
+    position: absolute;
+    margin-top: 50px;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+    align-items: center;
   }
 }
+
 #hero-section {
   margin-top: 56px;
   padding-top: 16vh !important;
   min-height: 100vh;
-  color: rgb(255, 119, 0);
-  text-shadow: rgb(50, 48, 48) 3px 0 10px;
+  color: #e97e21; /* Color de texto principal */
+  text-shadow: rgba(50, 48, 48, 0.5) 3px 0 10px; /* Sombra de texto actualizada */
   font-family: "Playfair Display", serif;
   font-weight: bold;
   text-align: right;
 }
 
 #hero-section h3 {
-  color: #ffffff;
+  color: #ffffff; /* Color de texto de h3 */
 }
 
 @media (max-width: 850px) {
@@ -75,10 +70,9 @@ nav ul {
     margin-top: 16px !important;
     padding-top: 40vh !important;
     min-height: 90vh !important;
-    color: rgb(255, 255, 255);
-    text-shadow: none;
-    /*background-color: #ede5df;*/
-    background-color: #181b1b;
+    color: #ffffff; /* Color de texto en dispositivos móviles */
+    text-shadow: none; /* Sin sombra de texto en móviles */
+    background-color: #181b1b; /* Color de fondo actualizado */
     text-align: left;
   }
 }
@@ -104,14 +98,14 @@ nav ul {
 #portuguese,
 #spanish {
   transition: color 0.3s ease-in;
-  color: #ada7a7;
+  color: #e8eae0;
 }
 
 #english.hover,
 #japanese.hover,
 #portuguese.hover,
 #spanish.hover {
-  color: #fffdfd;
+  color: #ffffff; /* Color de texto en hover */
 }
 
 @media (max-width: 850px) {
@@ -119,25 +113,50 @@ nav ul {
   #japanese,
   #portuguese,
   #spanish {
-    color: #e97e21;
+    color: #e97e21; /* Color de texto en dispositivos móviles */
   }
 
   #english.hover,
   #japanese.hover,
   #portuguese.hover,
   #spanish.hover {
-    color: #424242;
+    color: #424242; /* Color de hover en móviles */
   }
 }
 
 #about-section,
+#quote-section,
 #servicios-section,
 #recomendaciones-section,
 #blog-section,
 #contacto-section {
   padding-top: 100px !important;
-  min-height: 100vh !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  background-color: #eae6e6;
+  background-color: #f7f8f7;
+}
+
+#quote-section,
+#servicios-section,
+#recomendaciones-section,
+#blog-section,
+#contacto-section {
+  margin-bottom: 200px !important;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+@media (max-width: 850px) {
+  #about-section,
+  #quote-section,
+  #servicios-section,
+  #recomendaciones-section,
+  #blog-section,
+  #contacto-section {
+    margin-bottom: 10px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
 }
 
 @media (max-width: 850px) {
@@ -152,10 +171,42 @@ nav ul {
   }
 }
 
+@media (max-width: 850px) {
+  #quote-section {
+    margin-top: 10px !important;
+  }
+}
+
 #about-section {
-  /* background-color: #e29633; */
-  background-color: #eae6e6;
-  color: #26292e;
+  color: #424242; /* Color de texto actualizado */
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.translation-img {
+    filter: brightness(100%) saturate(1%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 850px) {
+  #about-section {
+  color: #424242; /* Color de texto actualizado */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+}
+
+  .translation-img {
+    filter: brightness(100%) saturate(1%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 }
 
 #acerca-de {
@@ -170,6 +221,11 @@ nav ul {
   align-items: center;
   justify-content: center;
   height: 250px !important;
+  margin-top: 200px;
+}
+
+.service-cards {
+  margin-top: 100px;
 }
 
 .card-text {
@@ -184,7 +240,7 @@ nav ul {
 
 #recomendaciones-section {
   text-align: center;
-  color: rgb(42, 40, 39);
+  color: #424242; /* Color de texto actualizado */
   font-family: "Lexend", sans-serif;
   font-weight: 300;
 }
@@ -217,12 +273,12 @@ footer {
 }
 
 footer a {
-  color: white; /* Cambia el color del texto a blanco */
+  color: white; /* Color del texto del enlace en el pie de página */
   text-decoration: none; /* Remueve el subrayado */
 }
 
 footer a:hover {
-  color: white; /* Asegura que el color del texto se mantenga blanco al pasar el mouse */
+  color: white; /* Color del texto al pasar el mouse */
   text-decoration: none; /* Asegura que el subrayado se mantenga removido al pasar el mouse */
 }
 
@@ -253,18 +309,15 @@ footer a:hover {
 /* Blog */
 
 #blog-section {
-  background-color: #f4f4f4;
   padding: 2rem 0;
 }
 
 #blog-section h2 {
   text-align: center;
-  margin-top: 40px;
   margin-bottom: 1.5rem;
 }
 
 #blog-posts article {
-  background-color: #fff;
   padding: 1.5rem !important;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -277,15 +330,15 @@ footer a:hover {
 #blog-posts article p small {
   display: block;
   margin-bottom: 1rem;
-  color: #666;
+  color: #666; /* Color del texto pequeño */
 }
 
 #blog-posts article p strong {
-  font-weight: bold;
+  font-weight: bold; /* Negrita para texto fuerte */
 }
 
 #blog-posts article p em {
-  font-style: italic;
+  font-style: italic; /* Estilo cursivo para texto enfatizado */
 }
 
 #blog-navigation {
@@ -296,7 +349,7 @@ footer a:hover {
 }
 
 #blog-navigation .btn {
-  min-width: 100px;
+  min-width: 100px; /* Ancho mínimo para botones de navegación del blog */
 }
 
 @media (max-width: 850px) {
