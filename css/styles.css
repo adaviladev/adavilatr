@@ -134,6 +134,7 @@ nav ul {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
   background-color: #eae6e6;
   background-color: #f7f8f7;
+  max-width: 70%;
 }
 
 #quote-section,
@@ -156,6 +157,7 @@ nav ul {
     margin-bottom: 10px !important;
     padding-top: 20px !important;
     padding-bottom: 20px !important;
+    max-width: 90%;
   }
 }
 
@@ -191,6 +193,10 @@ nav ul {
     justify-content: space-around;
 }
 
+.translation-img img {
+  width: 400px;
+}
+
 
 @media (max-width: 850px) {
   #about-section {
@@ -206,6 +212,10 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.translation-img img {
+  width: 200px;
 }
 }
 
