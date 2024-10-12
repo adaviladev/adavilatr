@@ -1,31 +1,91 @@
-body {
-    background-color: #465059 !important;
+.pt-sans-bold {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-html p {
+.playfair-display-regular {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.lexend-regular {
   font-family: "Lexend", sans-serif;
-  font-weight: 300;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-html p {
-  font-size: calc(16px + 0.2vw) !important;
+body {
+  background-color: #465059 !important;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 64px !important;
 }
 
 h2 {
-  margin-bottom: 5vh !important;
+  font-family: "Lexend", sans-serif;
+}
+
+.hero h2 {
+  font-weight: 200 !important;
+}
+
+h3 {
+  font-size: 18px !important;
+}
+
+.mi-nombre {
+  margin-bottom: 0;
+}
+
+p {
+  font-family: "PT Sans", sans-serif !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  background-color: #e97e21;
+}
+
+a:active {
+  background-color: #ff7700;
+}
+
+a > .language-button {
+  font-family: "Lexend", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: #bbbdbd;
+}
+
+i {
+  color: #e97e21;
 }
 
 @media (max-width: 850px) {
   body {
-    padding-top: 40px;
+    padding-top: 0px;
     color: #424242; /* Color de texto actualizado */
     transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  h1 {
+    font-size: 24px !important;
+  }
+  .hero h2 {
+    font-size: 18px !important;
   }
 }
 
 nav ul {
   font-family: "Lexend", sans-serif;
   font-weight: 200;
+  font-size: 18px;
 }
 
 #language-selector {
@@ -56,13 +116,14 @@ nav ul {
   min-height: 100vh;
   color: #e97e21; /* Color de texto principal */
   text-shadow: rgba(50, 48, 48, 0.5) 3px 0 10px; /* Sombra de texto actualizada */
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
+
   text-align: right;
 }
 
-#hero-section h3 {
-  color: #ffffff; /* Color de texto de h3 */
+#hero-section h2 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: lighter;
 }
 
 @media (max-width: 850px) {
@@ -99,6 +160,7 @@ nav ul {
 #spanish {
   transition: color 0.3s ease-in;
   color: #e8eae0;
+  font-size: 36px;
 }
 
 #english.hover,
@@ -114,6 +176,7 @@ nav ul {
   #portuguese,
   #spanish {
     color: #e97e21; /* Color de texto en dispositivos móviles */
+    font-size: 18px;
   }
 
   #english.hover,
@@ -130,7 +193,6 @@ nav ul {
 #recomendaciones-section,
 #blog-section,
 #contacto-section {
-  padding-top: 100px !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
   background-color: #eae6e6;
   background-color: #f7f8f7;
@@ -179,50 +241,54 @@ nav ul {
   }
 }
 
-#about-section {
-  color: #424242; /* Color de texto actualizado */
+.about-sides {
   display: flex;
   align-content: center;
   justify-content: space-between;
 }
 
-.translation-img {
-    filter: brightness(100%) saturate(1%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.side-a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 
-.translation-img img {
-  width: 400px;
+.side-b {
+  filter: brightness(100%) saturate(1%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
+.side-b img {
+  max-width: 80%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
 
 @media (max-width: 850px) {
   #about-section {
-  color: #424242; /* Color de texto actualizado */
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: space-between;
-}
+    color: #424242; /* Color de texto actualizado */
+  }
+  .about-sides {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+  }
 
-  .translation-img {
+  .side-b {
     filter: brightness(100%) saturate(1%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
+  }
 
-.translation-img img {
-  width: 200px;
-}
-}
-
-#acerca-de {
-  font-size: calc(28px + 0.3vw);
-  font-family: "Libre Caslon Text", serif;
-  font-style: normal;
+  .side-b img {
+    width: 200px;
+  }
 }
 
 #quote-section {
@@ -232,6 +298,7 @@ nav ul {
   justify-content: center;
   height: 250px !important;
   margin-top: 200px;
+  font-size: 18px;
 }
 
 .service-cards {
@@ -240,28 +307,20 @@ nav ul {
 
 .card-text {
   font-size: 16px !important;
-  font-family: "Lexend", sans-serif;
-  font-weight: 200;
-}
-
-.navbar {
-  font-size: calc(16px + 0.2vw) !important;
 }
 
 #recomendaciones-section {
   text-align: center;
-  color: #424242; /* Color de texto actualizado */
-  font-family: "Lexend", sans-serif;
-  font-weight: 300;
+  color: #424242;
 }
 
 .cita p {
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding-left: 18vw;
+  padding-right: 18vw;
   padding-top: 4vw;
   padding-bottom: 4vw;
   text-align: center;
-  font-size: calc(1rem + 0.5vw);
+  /* font-size: calc(1rem + 0.5vw); */
 }
 
 @media (max-width: 850px) {
@@ -271,8 +330,51 @@ nav ul {
   }
 }
 
+#siguiente,
+#anterior {
+  background-color: #e97e21;
+}
+
+/* Blog */
+
+#blog-section {
+  padding: 2rem 0;
+}
+
+#blog-posts article {
+}
+
+#blog-posts article h3 {
+  margin-top: 0;
+}
+
+#blog-posts article p small {
+  display: block;
+  margin-bottom: 1rem;
+  color: #666; /* Color del texto pequeño */
+}
+
+#blog-navigation {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50%;
+  margin: auto;
+}
+
+#blog-navigation .btn {
+  min-width: 100px; /* Ancho mínimo para botones de navegación del blog */
+}
+
+@media (max-width: 850px) {
+  #blog-navigation {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
 #contacto-section {
-  padding-top: 100px !important;
   min-height: 85vh !important;
 }
 
@@ -314,59 +416,4 @@ footer a:hover {
 .linkedin-btn {
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-/* Blog */
-
-#blog-section {
-  padding: 2rem 0;
-}
-
-#blog-section h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-#blog-posts article {
-  padding: 1.5rem !important;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#blog-posts article h3 {
-  margin-top: 0;
-}
-
-#blog-posts article p small {
-  display: block;
-  margin-bottom: 1rem;
-  color: #666; /* Color del texto pequeño */
-}
-
-#blog-posts article p strong {
-  font-weight: bold; /* Negrita para texto fuerte */
-}
-
-#blog-posts article p em {
-  font-style: italic; /* Estilo cursivo para texto enfatizado */
-}
-
-#blog-navigation {
-  display: flex;
-  justify-content: space-between;
-  max-width: 50%;
-  margin: auto;
-}
-
-#blog-navigation .btn {
-  min-width: 100px; /* Ancho mínimo para botones de navegación del blog */
-}
-
-@media (max-width: 850px) {
-  #blog-navigation {
-    display: flex;
-    justify-content: space-between;
-    max-width: 80%;
-    margin: auto;
-  }
 }

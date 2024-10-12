@@ -3,18 +3,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const languageElements = {
     english: {
       id: "english",
-      hoverText: "English",
-      defaultText: "inglés",
+      hoverText: "English |",
+      defaultText: "inglés |",
     },
     japanese: {
       id: "japanese",
-      hoverText: "日本語",
-      defaultText: "japonés",
+      hoverText: "日本語 |",
+      defaultText: "japonés |",
     },
     portuguese: {
       id: "portuguese",
-      hoverText: "português",
-      defaultText: "portugués",
+      hoverText: "português |",
+      defaultText: "portugués |",
     },
     spanish: {
       id: "spanish",
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
     blogPostsSection.innerHTML = "";
     const post = blogPosts[index];
     const article = document.createElement("article");
-    article.classList.add("mb-4", "p-3", "rounded", "shadow-sm");
+    article.classList.add("mb-4", "p-3");
     article.innerHTML = `
           <h3>${post.title}</h3>
           <p><small>${post.date}</small></p>
